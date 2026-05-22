@@ -1,8 +1,8 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
 
-const inputFile = 'fm-use-case/Patient Centric Med List Med Reconciliation-Use Case Analysis Worksheet-20260423.xlsx';
-const outputFile = 'fm-use-case/ExampleScenario.fsh';
+const inputFile = 'script/Patient Centric Med List Med Reconciliation-Use Case Analysis Worksheet-20260423.xlsx';
+const outputFile = 'input/fsh/ExampleScenario.fsh';
 
 const workbook = XLSX.readFile(inputFile);
 const sheetName = workbook.SheetNames[0];

@@ -7,18 +7,11 @@ Usage: #example
 * instance[0].key = "inst-0-resp"
 * instance[0].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[0].title = "Patient Registration Record - 1A (resp)"
-* instance[0].description = "US Core - Patient
-, US Core - Practitioner
-, US Core - Condition Problems and Health Concerns
-, US Core - Encounter(planned)
-, Standardized Medication Profile - MedicationList"
+* instance[0].description = "US Core - Patient, US Core - Practitioner, US Core - Condition Problems and Health Concerns, US Core - Encounter(planned), Standardized Medication Profile - MedicationList"
 * instance[1].key = "inst-0-req"
 * instance[1].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[1].title = "Communication Record - 1A (req)"
-* instance[1].description = "US Core - Provenance
-, US Core - Encounter(planned)
-, US Core - Practitioner
-, Standardized Medication Profile - MedicationStatement"
+* instance[1].description = "US Core - Provenance, US Core - Encounter(planned), US Core - Practitioner, Standardized Medication Profile - MedicationStatement"
 * instance[2].key = "inst-2-resp"
 * instance[2].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[2].title = "Communication Record - 1B (resp)"
@@ -26,20 +19,15 @@ Usage: #example
 * instance[3].key = "inst-2-req"
 * instance[3].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[3].title = "Communication Record - 1B (req)"
-* instance[3].description = "Base FHIR CommunicationRequest
-, US Core - Provenance"
+* instance[3].description = "Base FHIR CommunicationRequest, US Core - Provenance"
 * instance[4].key = "inst-3-resp"
 * instance[4].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[4].title = "Communication Record - 1C (resp)"
-* instance[4].description = "Base FHIR CommunicationRequest
-, US Core - Provenance"
+* instance[4].description = "Base FHIR CommunicationRequest, US Core - Provenance"
 * instance[5].key = "inst-3-req"
 * instance[5].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[5].title = "1) Appointment Notification - 1C (req)"
-* instance[5].description = "2) Medication List Review Notification
-, 
-, FHIR Resources:
-, Base FHIR Communication"
+* instance[5].description = "2) Medication List Review Notification, , FHIR Resources:, Base FHIR Communication"
 * actor[0].key = "ehr-system"
 * actor[0].type = #system
 * actor[0].title = "EHR System"
@@ -74,11 +62,7 @@ Usage: #example
 * instance[0].key = "inst-0-resp"
 * instance[0].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[0].title = "Account Holder Access Credentials - 1A (resp)"
-* instance[0].description = "US Core - Patient
-, US Core - RelatedPerson
-, US Core - Condition
-, US Core - Encounter(Planned)
-, Standardized Medication Profile - MedicationList"
+* instance[0].description = "US Core - Patient, US Core - RelatedPerson, US Core - Condition, US Core - Encounter(Planned), Standardized Medication Profile - MedicationList"
 * instance[1].key = "inst-0-req"
 * instance[1].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[1].title = "Account Holder Access Record - 1A (req)"
@@ -94,26 +78,15 @@ Usage: #example
 * instance[4].key = "inst-3-resp"
 * instance[4].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[4].title = "Appointment Record - 2A (resp)"
-* instance[4].description = "US Core - Patient
-, US Core - RelatedPerson
-, US Core - Practitioner
-, US Core - Organization
-, US Core - Location
-, US Core - Encounter(Planned)"
+* instance[4].description = "US Core - Patient, US Core - RelatedPerson, US Core - Practitioner, US Core - Organization, US Core - Location, US Core - Encounter(Planned)"
 * instance[5].key = "inst-3-req"
 * instance[5].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[5].title = "Appointment Record - 2A (req)"
-* instance[5].description = "US Core - Practitioner
-, US Core - Organization
-, US Core - Location
-, US Core - Encounter(Planned)"
+* instance[5].description = "US Core - Practitioner, US Core - Organization, US Core - Location, US Core - Encounter(Planned)"
 * instance[6].key = "inst-4-resp"
 * instance[6].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[6].title = "Appointment Record - 2B (resp)"
-* instance[6].description = "US Core - Practitioner
-, US Core - Organization
-, US Core - Location
-, US Core - Encounter(Planned)"
+* instance[6].description = "US Core - Practitioner, US Core - Organization, US Core - Location, US Core - Encounter(Planned)"
 * instance[7].key = "inst-4-req"
 * instance[7].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[7].title = "Appointment Record - 2B (req)"
@@ -121,22 +94,15 @@ Usage: #example
 * instance[8].key = "inst-5-resp"
 * instance[8].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[8].title = "Patient Demographic Record - 3A (resp)"
-* instance[8].description = "US Core - Patient
-, US Core - RelatedPerson
-, US Core - Interpreter Needed
-, US Core - Observation Occupation"
+* instance[8].description = "US Core - Patient, US Core - RelatedPerson, US Core - Interpreter Needed, US Core - Observation Occupation"
 * instance[9].key = "inst-5-req"
 * instance[9].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[9].title = "Updated Patient Demographic Record - 3A (req)"
-* instance[9].description = "US Core - Patient
-, US Core - Interpreter Needed
-, US Core - Observation Occupation"
+* instance[9].description = "US Core - Patient, US Core - Interpreter Needed, US Core - Observation Occupation"
 * instance[10].key = "inst-6-resp"
 * instance[10].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[10].title = "Updated Patient Demographic Record - 3B (resp)"
-* instance[10].description = "US Core - Patient
-, US Core - Interpreter Needed
-, US Core - Observation Occupation"
+* instance[10].description = "US Core - Patient, US Core - Interpreter Needed, US Core - Observation Occupation"
 * instance[11].key = "inst-6-req"
 * instance[11].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[11].title = "Updated Patient Demographic Record - 3B (req)"
@@ -144,21 +110,15 @@ Usage: #example
 * instance[12].key = "inst-7-resp"
 * instance[12].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[12].title = "Patient Insurance Coverage Record - 4A (resp)"
-* instance[12].description = "US Core - Coverage
-, US Core - Organization
-, US Core - Location"
+* instance[12].description = "US Core - Coverage, US Core - Organization, US Core - Location"
 * instance[13].key = "inst-7-req"
 * instance[13].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[13].title = "Updated Patient Insurance Coverage Record - 4A (req)"
-* instance[13].description = "US Core - Coverage
-, US Core - Organization
-, US Core - Location"
+* instance[13].description = "US Core - Coverage, US Core - Organization, US Core - Location"
 * instance[14].key = "inst-8-resp"
 * instance[14].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[14].title = "Updated Patient Insurance Coverage Record - 4B (resp)"
-* instance[14].description = "US Core - Coverage
-, US Core - Organization
-, US Core - Location"
+* instance[14].description = "US Core - Coverage, US Core - Organization, US Core - Location"
 * instance[15].key = "inst-8-req"
 * instance[15].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[15].title = "Updated Patient Insurance Coverage Record - 4B (req)"
@@ -166,9 +126,7 @@ Usage: #example
 * instance[16].key = "inst-9-resp"
 * instance[16].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[16].title = "Patient Allergy List - 5A (resp)"
-* instance[16].description = "US Core - Patient
-, US Core - RelatedPerson
-, US Core - AllergyIntolerance"
+* instance[16].description = "US Core - Patient, US Core - RelatedPerson, US Core - AllergyIntolerance"
 * instance[17].key = "inst-9-req"
 * instance[17].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[17].title = "Patient Allergy List - 5A (req)"
@@ -176,9 +134,7 @@ Usage: #example
 * instance[18].key = "inst-10-resp"
 * instance[18].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[18].title = "Updated Patient Allergy List - 5B (resp)"
-* instance[18].description = "US Core - Patient
-, US Core - RelatedPerson
-, US Core - AllergyIntolerence"
+* instance[18].description = "US Core - Patient, US Core - RelatedPerson, US Core - AllergyIntolerence"
 * instance[19].key = "inst-10-req"
 * instance[19].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[19].title = "Updated Patient Allergy List - 5B (req)"
@@ -186,19 +142,15 @@ Usage: #example
 * instance[20].key = "inst-11-resp"
 * instance[20].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[20].title = "Patient Travel Record - 6A (resp)"
-* instance[20].description = "US Core - Patient
-, US Core - RelatedPerson
-, US Core - SimpleObservation(Not a good way to record and update travel history in USCDI)"
+* instance[20].description = "US Core - Patient, US Core - RelatedPerson, US Core - SimpleObservation(Not a good way to record and update travel history in USCDI)"
 * instance[21].key = "inst-11-req"
 * instance[21].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[21].title = "Updated Patient Travel Record - 6A (req)"
-* instance[21].description = "US Core - Patient
-, US Core - SimpleObservation"
+* instance[21].description = "US Core - Patient, US Core - SimpleObservation"
 * instance[22].key = "inst-12-resp"
 * instance[22].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[22].title = "Updated Patient Travel Record - 6B (resp)"
-* instance[22].description = "US Core - Patient
-, US Core - SimpleObservation"
+* instance[22].description = "US Core - Patient, US Core - SimpleObservation"
 * instance[23].key = "inst-12-req"
 * instance[23].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[23].title = "Updated Patient Travel Record - 6B (req)"
@@ -206,14 +158,11 @@ Usage: #example
 * instance[24].key = "inst-13-resp"
 * instance[24].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[24].title = "Patient Consents and Authorizations - 7A (resp)"
-* instance[24].description = "US Core - Patient
-, US Core - RelatedPerson
-, Base FHIR Consent"
+* instance[24].description = "US Core - Patient, US Core - RelatedPerson, Base FHIR Consent"
 * instance[25].key = "inst-13-req"
 * instance[25].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[25].title = "Updated Patient Consents and Authorizations - 7A (req)"
-* instance[25].description = "US Core - Patient
-, Base FHIR Consent"
+* instance[25].description = "US Core - Patient, Base FHIR Consent"
 * instance[26].key = "inst-14-resp"
 * instance[26].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[26].title = "Updated Patient Consents and Authorizations - 7B (resp)"
@@ -225,14 +174,11 @@ Usage: #example
 * instance[28].key = "inst-15-resp"
 * instance[28].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[28].title = "Patient Pre-Appointment Information Requests - 8A (resp)"
-* instance[28].description = "US Core - Patient
-, US Core - RelatedPerson
-, Base FHIR Questionnaire"
+* instance[28].description = "US Core - Patient, US Core - RelatedPerson, Base FHIR Questionnaire"
 * instance[29].key = "inst-15-req"
 * instance[29].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[29].title = "Updated Patient Pre-Appointment Information Requests - 8A (req)"
-* instance[29].description = "US Core - Patient
-, US Core - QuestionnaireResponse"
+* instance[29].description = "US Core - Patient, US Core - QuestionnaireResponse"
 * instance[30].key = "inst-16-resp"
 * instance[30].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[30].title = "Updated Patient Pre-Appointment Questionnaire - 8B (resp)"
@@ -244,19 +190,15 @@ Usage: #example
 * instance[32].key = "inst-17-resp"
 * instance[32].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[32].title = "Notice(s) - 9A (resp)"
-* instance[32].description = "US Core - Patient
-, US Core - RelatedPerson
-, Base FHIR Consent"
+* instance[32].description = "US Core - Patient, US Core - RelatedPerson, Base FHIR Consent"
 * instance[33].key = "inst-17-req"
 * instance[33].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[33].title = "Acknowledged/Signed Receipt of Notice(s) - 9A (req)"
-* instance[33].description = "US Core - Patient
-, Base FHIR Consent"
+* instance[33].description = "US Core - Patient, Base FHIR Consent"
 * instance[34].key = "inst-18-resp"
 * instance[34].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[34].title = "Acknowledged/Signed Receipt of Notice(s) - 9B (resp)"
-* instance[34].description = "US Core - Patient
-, Base FHIR Consent"
+* instance[34].description = "US Core - Patient, Base FHIR Consent"
 * instance[35].key = "inst-18-req"
 * instance[35].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[35].title = "Acknowledged/Signed Receipt of Notice(s) - 9B (req)"
@@ -373,10 +315,7 @@ Usage: #example
 * instance[0].key = "inst-0-resp"
 * instance[0].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[0].title = "Active Patient Medication List Query - 1A (resp)"
-* instance[0].description = "US Core - Patient 
-, US Core - Organization
-, US Core - Practitioner
-, US Core - Provenance (of last medication reconcilliation event)"
+* instance[0].description = "US Core - Patient , US Core - Organization, US Core - Practitioner, US Core - Provenance (of last medication reconcilliation event)"
 * instance[1].key = "inst-0-req"
 * instance[1].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[1].title = "Active Patient Medication List Query - 1A (req)"
@@ -400,15 +339,11 @@ Usage: #example
 * instance[6].key = "inst-3-req"
 * instance[6].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[6].title = "Active Patient Medication List Query Response - 2A (req)"
-* instance[6].description = "Standardized Medication Profile - Parameters - Response
-, Standardized Medication Profile - Parameters - Outcome
-, Standardized Medication Profile - Medication List (as maintained by System)
-, Standardized Medication Profile - MedicationStatement (as reported by Patient)"
+* instance[6].description = "Standardized Medication Profile - Parameters - Response, Standardized Medication Profile - Parameters - Outcome, Standardized Medication Profile - Medication List (as maintained by System), Standardized Medication Profile - MedicationStatement (as reported by Patient)"
 * instance[7].key = "inst-4-resp"
 * instance[7].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[7].title = "Active Patient Medication List Query Response - 2B (resp)"
-* instance[7].description = "Standardized Medication Profile - Parameters - Response
-, Standardized Medication Profile - Parameters - Outcome"
+* instance[7].description = "Standardized Medication Profile - Parameters - Response, Standardized Medication Profile - Parameters - Outcome"
 * instance[8].key = "inst-4-req"
 * instance[8].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[8].title = "Active Patient Medication List Query Response - 2B (req)"
@@ -456,22 +391,11 @@ Usage: #example
 * instance[0].key = "inst-0-resp"
 * instance[0].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[0].title = "<Any/All Prior Records> - 1A (resp)"
-* instance[0].description = "Current Medication List
-, Current Medication Orders
-, Current Medication Dispensing Records
-, 
-, FHIR Resources:
-, US Core - Patient
-, US Core - RelatedPerson
-, Standardized Medication Profile - Medication
-, Standardized Medication Profile - MedicationStatement
-, Standardized Medication Profile - MedicationList
-, Standardized Medication Profile - MedicationAdministration"
+* instance[0].description = "Current Medication List, Current Medication Orders, Current Medication Dispensing Records, , FHIR Resources:, US Core - Patient, US Core - RelatedPerson, Standardized Medication Profile - Medication, Standardized Medication Profile - MedicationStatement, Standardized Medication Profile - MedicationList, Standardized Medication Profile - MedicationAdministration"
 * instance[1].key = "inst-0-req"
 * instance[1].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[1].title = "Updated Medication List - 1A (req)"
-* instance[1].description = "Standardized Medication Profile - MedicationStatement
-, Standardized Medication Profile - Parameters - Submit"
+* instance[1].description = "Standardized Medication Profile - MedicationStatement, Standardized Medication Profile - Parameters - Submit"
 * instance[2].key = "inst-1-resp"
 * instance[2].structureType = http://hl7.org/fhir/fhir-types#Bundle
 * instance[2].title = "Updated Medication List - 1B (resp)"
