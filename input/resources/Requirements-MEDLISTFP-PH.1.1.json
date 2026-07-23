@@ -202,7 +202,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The system SHALL provide the ability to capture, maintain and render queries for information capture from external systems."
+      "requirement": "The system SHALL provide the ability to capture, maintain and render queries for information from external systems (e.g., query for active medication lists)."
     },
     {
       "extension": [
@@ -221,7 +221,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The system SHOULD provide the ability to render the status of queries to external systems, e.g., medication list and medication reconciliation event queries."
+      "requirement": "The system SHOULD provide the ability to render the status of queries to external systems (e.g., medication list and medication reconciliation event queries)."
     },
     {
       "extension": [
@@ -240,7 +240,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The system SHALL provide the ability to transmit queries to external systems to capture patient information (e.g., query for active medication list)."
+      "requirement": "The system SHALL provide the ability to transmit queries to external systems to capture patient information (e.g., query for active medication lists)."
     }
   ]
 }

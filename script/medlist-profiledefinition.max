@@ -72,12 +72,12 @@
     <object>
       <id>MEDLISTPH.3.5.1#01</id>
       <name>PH.3.5.1#01</name>
-      <notes>The system MAY maintain a health calendar function for recording and displaying scheduled health appointments or events.</notes>
+      <notes>The system SHOULD maintain a health calendar function for recording and displaying scheduled health appointments or events.</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
       <tag name="Row" value="26"/>
-      <tag name="Optionality" value="MAY"/>
+      <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
@@ -120,12 +120,12 @@
     <object>
       <id>MEDLISTPH.3.5.4#04</id>
       <name>PH.3.5.4#04</name>
-      <notes>The system MAY provide the ability to manage the PHR Account Holder‚Äôs response(s) to notifications and/or reminders.</notes>
+      <notes>The system SHOULD provide the ability to manage the PHR Account Holder's response(s) to notifications and/or reminders.</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
       <tag name="Row" value="30"/>
-      <tag name="Optionality" value="MAY"/>
+      <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
@@ -348,7 +348,7 @@
     <object>
       <id>MEDLISTS.2.2#07</id>
       <name>S.2.2#07</name>
-      <notes>The system MAY provide the ability to capture preauthorization requirements for medications and health services specific to the PHR Account Holder‚Äôs policies.</notes>
+      <notes>The system MAY provide the ability to capture preauthorization requirements for medications and health services specific to the PHR Account Holder's policies.</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
@@ -513,7 +513,7 @@
     <object>
       <id>MEDLISTPH.1.2#11</id>
       <name>PH.1.2#11</name>
-      <notes>The system SHOULD provide the ability to manage a patient's travel record, including dates and locations visited.</notes>
+      <notes>The system SHOULD provide the ability to manage a patient's travel record, including dates and locations visited (e.g., to prepare staff to take precautions to reduce transmission of communicable diseases during an office visit).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -534,7 +534,7 @@
     <object>
       <id>MEDLISTPH.1.5#03</id>
       <name>PH.1.5#03</name>
-      <notes>The system SHOULD provide the ability to manage consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law (e.g., capturing the PHR Account Holder's personal representative‚Äôs authority (such as a note from the PHR Account Holder or a pointer to a legal document) to enable decisions to be made on behalf of the PHR Account Holder).</notes>
+      <notes>The system SHOULD provide the ability to manage consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law (e.g., capturing the PHR Account Holder's personal representative's authority (such as a note from the PHR Account Holder or a pointer to a legal document) to enable decisions to be made on behalf of the PHR Account Holder).</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
@@ -579,7 +579,7 @@
     <object>
       <id>MEDLISTPH.1.5#11</id>
       <name>PH.1.5#11</name>
-      <notes>The system SHALL provide the ability to manage consents and authorizations for access to external systems where patient information may be stored (e.g., other EHR/HIT systems, HIEs, Pharmacy dispense systems, pharmacy benefits management systems) according to organizational policy or jurisdictional law.</notes>
+      <notes>The system SHALL provide the ability to manage consents and authorizations for access to external systems where patient medication information may be stored (e.g., other EHR/HIT systems, HIEs, pharmacy dispense systems, pharmacy benefits management systems) according to user preference, organizational policy, and/or jurisdictional law.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -678,7 +678,7 @@
     <object>
       <id>MEDLISTPH.1.1#09</id>
       <name>PH.1.1#09</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render queries for information capture from external systems.</notes>
+      <notes>The system SHALL provide the ability to capture, maintain and render queries for information from external systems (e.g., query for active medication lists).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -699,7 +699,7 @@
     <object>
       <id>MEDLISTPH.2.5.2#22</id>
       <name>PH.2.5.2#22</name>
-      <notes>The system SHOULD provide the ability to specify query selection criteria, e.g., encounter type (inpatient, ER...), how far to look back (query back to date), medications ordered and dispensed, over the counter medications.</notes>
+      <notes>The system SHOULD provide the ability to specify query selection criteria (e.g., encounter type (inpatient, ER...), how far to look back (query back to date), medications ordered and dispensed, over the counter medications).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -712,9 +712,9 @@
       <id>MEDLISTPH.2.5.2#23</id>
       <name>PH.2.5.2#23</name>
       <notes>The system SHALL provide the ability to capture, maintain and render the query/response for a the medication list associated with the most recent medication reconciliation event, for example:&#xD;
-• Constrained to the last outpatient encounter, ER visit, discharge from inpatient or extended care encounter;&#xD;
-• Constrained to EHR systems of other providers;&#xD;
-• Constrained to event date/time, organization, practitioner, encounter type.</notes>
+&gt; Constrained to the last outpatient encounter, ER visit, discharge from inpatient or extended care encounter;&#xD;
+&gt; Constrained to EHR systems of other providers;&#xD;
+&gt; Constrained to event date/time, organization, practitioner, encounter type.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -726,7 +726,7 @@
     <object>
       <id>MEDLISTPH.2.5.2#24</id>
       <name>PH.2.5.2#24</name>
-      <notes>The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to the Pharmacy Benefit Manager (PBM), e.g., a query via FHIR or API.</notes>
+      <notes>The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to the patient's pharmacy benefits manager (PBM) (e.g., a query via FHIR or API)</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -738,7 +738,7 @@
     <object>
       <id>MEDLISTPH.2.5.2#25</id>
       <name>PH.2.5.2#25</name>
-      <notes>The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to any dispensing system, e.g., a query via FHIR or API.</notes>
+      <notes>The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to the patient's pharmacy dispensing system (e.g., a query via FHIR or API)</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -750,7 +750,7 @@
     <object>
       <id>MEDLISTPH.2.5.2#26</id>
       <name>PH.2.5.2#26</name>
-      <notes>The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to any system, e.g., EHR systems of other providers, PHR systems used by the patient.</notes>
+      <notes>The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to any system (e.g., EHR systems of other providers, PHR systems used by the patient).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -762,7 +762,7 @@
     <object>
       <id>MEDLISTPH.1.1#10</id>
       <name>PH.1.1#10</name>
-      <notes>The system SHOULD provide the ability to render the status of queries to external systems, e.g., medication list and medication reconciliation event queries.</notes>
+      <notes>The system SHOULD provide the ability to render the status of queries to external systems (e.g., medication list and medication reconciliation event queries).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -774,7 +774,7 @@
     <object>
       <id>MEDLISTPH.1.1#11</id>
       <name>PH.1.1#11</name>
-      <notes>The system SHALL provide the ability to transmit queries to external systems to capture patient information (e.g., query for active medication list).</notes>
+      <notes>The system SHALL provide the ability to transmit queries to external systems to capture patient information (e.g., query for active medication lists).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -786,23 +786,11 @@
     <object>
       <id>MEDLISTPH.2.5.2#27</id>
       <name>PH.2.5.2#27</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render the patient's current medication list, incorporating lists gathered from external sources.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="100"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#28</id>
-      <name>PH.2.5.2#28</name>
       <notes>The system SHALL capture and maintain separate medication lists from each external system responding to a query, until a subsequent step which then disambiguates and incorporates each unique medication into a single list.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="101"/>
+      <tag name="Row" value="100"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -814,7 +802,7 @@
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="102"/>
+      <tag name="Row" value="101"/>
       <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -826,7 +814,7 @@
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="103"/>
+      <tag name="Row" value="102"/>
       <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -838,19 +826,31 @@
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="104"/>
+      <tag name="Row" value="103"/>
       <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#28</id>
+      <name>PH.2.5.2#28</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render a list of source systems (and providers) from which current (active) or past medications were received.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="104"/>
+      <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
       <id>MEDLISTPH.2.5.2#29</id>
       <name>PH.2.5.2#29</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render a list of source systems (and providers) from which current (active) or past medications were received.</notes>
+      <notes>The system SHALL provide the ability to capture, store and render the medication list from a previous patient-centric medication list management session.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="105"/>
+      <tag name="Row" value="110"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -858,7 +858,7 @@
     <object>
       <id>MEDLISTPH.2.5.2#30</id>
       <name>PH.2.5.2#30</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render the patient's current medication list, including those captured from external sources.</notes>
+      <notes>The system SHALL provide the ability to capture, maintain and render the patient's current medication list, incorporating lists captured from external sources (i.e., an "as taken" medication list authored by the patient).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -870,7 +870,7 @@
     <object>
       <id>MEDLISTPH.2.5.2#31</id>
       <name>PH.2.5.2#31</name>
-      <notes>The system SHALL provide the ability to render each medication using a reference source for structured and free text representation of the medication name, dosing, NDC and other medication information (e.g., reference sources include RxNorm, compendia or similar).</notes>
+      <notes>The system SHALL provide the ability to determine the aggregation of medication lists from multiple sources via a disambiguation function.  Disambiguation compares the following elements to decide if medications match, partially match or do not match: generic name, trade (brand) name(s), dose, dose units, route, and frequency. </notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -880,11 +880,11 @@
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#08</id>
-      <name>PH.2.5.2#08</name>
-      <notes>The system SHALL provide the ability to render the timing, route of administration, and dose of all medications on the medication list.</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
+      <id>MEDLISTPH.2.5.2#32</id>
+      <name>PH.2.5.2#32</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list. </notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
       <parentId>MEDLIST</parentId>
       <tag name="Row" value="113"/>
       <tag name="Optionality" value="SHALL"/>
@@ -892,9 +892,9 @@
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#32</id>
-      <name>PH.2.5.2#32</name>
-      <notes>The system SHALL provide the ability to capture, store and render the medication list from a previous patient-centric medication reconciliation session.</notes>
+      <id>MEDLISTPH.2.5.2#33</id>
+      <name>PH.2.5.2#33</name>
+      <notes>The system SHALL provide the ability to render each medication using a reference source for representation of the medication name, dose, and other structured medication information (e.g., use of reference sources such as RxNorm, pharmacy compendia).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
@@ -904,492 +904,13 @@
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#33</id>
-      <name>PH.2.5.2#33</name>
-      <notes>[Noah] The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list (comparing generic name, trade name, dose, dose units, and sig).&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list. Disambiguation compares the following elements to determine if medications are identical, partially identical or different between lists:  generic name, trade (brand) name, dose, dose units, sig (signatura - instructions for use).&#xD;
-&#xD;
-[Update 27 Feb 2026 - Gary]:  The system SHALL provide the ability to determine the aggregation of medication lists from multiple sources via a disambiguation function.  Disambiguation compares the following elements to decide if medications match, partially match or do not match: generic name, trade (brand) name(s), dose, dose units and frequency.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="115"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#34</id>
-      <name>PH.2.5.2#34</name>
-      <notes>[Noah] The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication, including medication name, dose, dosage form, frequency and compliance details.&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication on the medication list, including medication name, dose, dose units, frequency and other details, including compliance with any related instructions.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="116"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#16</id>
-      <name>PH.2.5.2#16</name>
-      <notes>[Noah] The system SHOULD provide the ability for the PHR Account Holder to update the medication list by indicating medications actually being taken.&#xD;
-&#xD;
-[Original] The system SHOULD provide the ability for the PHR Account Holder to update the medication list by indicating those medications that are actually being taken.</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="117"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#17</id>
-      <name>PH.2.5.2#17</name>
-      <notes>[Noah] The system SHOULD provide the ability for the PHR Account Holder to maintain the medication list by updating medication self-administration status.&#xD;
-&#xD;
-[Original] The system SHOULD provide the ability for the PHR Account Holder to maintain the medication list by updating the status of the medication self-administration (e.g., no longer being taken or completed the regime).</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="118"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#35</id>
-      <name>PH.2.5.2#35</name>
-      <notes>[Noah] The system SHALL provide the ability to capture, maintain and render medications added during reconciliation, utilizing reference lists, OTC meds, generic/brand names, type-ahead pick list, duplicate checks, dosage, dosing times, reason for addition, complex dosing, indication, and ordering prescriber.&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture, maintain and render medications added to the medication list during patient-centric reconciliation, utilizing and/or incorporating:&#xD;
-- Reference medication list (e.g., RxNorm, compendia);&#xD;
-- Over the counter medications;&#xD;
-- Both generic and brand name medications;&#xD;
-- Type ahead pick list;&#xD;
-- Duplicate checks;&#xD;
-- Dosage (based on available/allowed dosages);&#xD;
-- Dosage form (based on available/allowed dosage forms);&#xD;
-- Dosing times (frequencies in grouped pick list, not alpha sort, allowing "other" text);&#xD;
-- Option: reason for addition (from pick list, allowing "other" text);&#xD;
-- Option: complex dosing;&#xD;
-- Option: medication indication (reason for prescribing);&#xD;
-- Option: ordering prescriber.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="119"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#18</id>
-      <name>PH.2.5.2#18</name>
-      <notes>[Noah] The system SHOULD provide the ability to capture prescription and non-prescription items (including dietary supplements) as discrete data and/or lists.&#xD;
-&#xD;
-[Original] The system SHOULD provide the ability to capture, maintain, and render prescription and non-prescription items (including dietary supplements) as discrete data and/or as lists.</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="120"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#04</id>
-      <name>PH.2.5.2#04</name>
-      <notes>[Noah] The system SHALL provide the ability to capture medications not on existing medication lists or histories.&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture medications that are not on the PHR Account Holder's existing medication list(s) or the existing medication history(s).</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="121"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#36</id>
-      <name>PH.2.5.2#36</name>
-      <notes>[Noah] If a medication has been added during reconciliation, the system SHALL determine whether new drug-drug interactions are indicated.&#xD;
-&#xD;
-[Original] IF a medication has been added to the list during patient-centric reconciliation, THEN the system SHOULD provide the ability to determine whether any new drug-drug interactions are indicated.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="122"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#37</id>
-      <name>PH.2.5.2#37</name>
-      <notes>IF drug-drug interactions or other clinical safety related risks are identified, THEN the system SHALL provide the ability to tag the corresponding medications.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="123"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="Y"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#38</id>
-      <name>PH.2.5.2#38</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render all changes during reconciliation, including dosage, dosage form, dosing times, reason for update, complex dosing, medication indication, and ordering prescriber.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="124"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#39</id>
-      <name>PH.2.5.2#39</name>
-      <notes>The system SHALL provide the ability to update a medication after it has been added to the medication list.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="125"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#14</id>
-      <name>PH.2.5.2#14</name>
-      <notes>The system SHOULD provide the ability to annotate the medication list with text comments.</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="126"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#40</id>
-      <name>PH.2.5.2#40</name>
-      <notes>[Noah] The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a medication, with status: On hold (as directed / not as directed); Stopped (as directed / not as directed).&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a particular medication on the medication list, including the status that the medication is:&#xD;
-&gt; On hold, as directed;&#xD;
-&gt; On hold, not as directed;&#xD;
-&gt; Stopped, as directed;&#xD;
-&gt; Stopped, not as directed.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="127"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#41</id>
-      <name>PH.2.5.2#41</name>
-      <notes>[Noah] The system SHALL provide the ability to capture, maintain and render the reason the patient is not taking a medication: Taking alternative medication; Course completed; Adverse reaction; Cannot afford; Other.&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture, maintain and render a notation of the reason the patient is not currently taking a particular medication on the medication list, including details of the reason:&#xD;
-&gt; Taking alternative medication;&#xD;
-&gt; Course completed;&#xD;
-&gt; Adverse reaction or other intolerance;&#xD;
-&gt; Cannot afford;&#xD;
-&gt; Other reasons.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="128"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#42</id>
-      <name>PH.2.5.2#42</name>
-      <notes>[Noah] The system SHALL provide the ability to capture the number of doses remaining for each medication.&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture the number of doses remaining for each medication on the medication list.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="129"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#13</id>
-      <name>PH.2.5.2#13</name>
-      <notes>[Noah] The system SHOULD provide the ability for the PHR Account Holder to transmit refill requests to a pharmacy or prescribing provider.&#xD;
-&#xD;
-[Original] The system SHOULD provide the ability for the PHR Account Holder to transmit a request for a medication refill to a pharmacy, or to the prescribing provider (if refills are not available for the given prescription).</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="130"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#03</id>
-      <name>PH.2.5.2#03</name>
-      <notes>[Noah] The system SHOULD provide the ability to capture medication-related dates (start, fill, end).&#xD;
-&#xD;
-[Original] The system SHOULD provide the ability to capture dates associated with medications such as start date, fill date, and end date (e.g., so that a PHR Account Holder can keep track of multiple refills for a long-running prescription).</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="131"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#43</id>
-      <name>PH.2.5.2#43</name>
-      <notes>[Noah] The system SHALL provide the ability to capture, maintain and render medication refill requests based on remaining dose thresholds.&#xD;
-&#xD;
-[Original] The system SHALL provide the ability to capture, maintain and render medication refill requests based on the threshold quantity of remaining doses identified during patient-centric reconciliation.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="132"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#44</id>
-      <name>PH.2.5.2#44</name>
-      <notes>[Noah] The system SHALL present visual feedback for the updated status of each medication reviewed during reconciliation.&#xD;
-&#xD;
-[Original] The system SHALL present visual feedback for the updated status of each medication reviewed during patient-centric reconciliation.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="134"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#45</id>
-      <name>PH.2.5.2#45</name>
-      <notes>[Noah] The system SHALL present visual feedback showing reviewed items and highlighting items awaiting review during reconciliation.&#xD;
-&#xD;
-[Original] The system SHALL present visual feedback for each item on the medication list as it is reviewed during patient-centric reconciliation , showing those that have been reviewed and highlighting those that are still awaiting review.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="135"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#46</id>
-      <name>PH.2.5.2#46</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render the patient's current medication list, including those captured from external sources.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="136"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#47</id>
-      <name>PH.2.5.2#47</name>
-      <notes>The system SHALL provide the ability to render each medication using a reference source for structured and free text representation of the medication name, dosing, NDC and other medication information (e.g., reference sources include RxNorm, compendia or similar).</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="137"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
       <id>MEDLISTPH.2.5.2#08</id>
       <name>PH.2.5.2#08</name>
       <notes>The system SHALL provide the ability to render the timing, route of administration, and dose of all medications on the medication list.</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="138"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#48</id>
-      <name>PH.2.5.2#48</name>
-      <notes>The system SHALL provide the ability to capture, store and render the medication list from a previous patient-centric medication reconciliation session.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="139"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#49</id>
-      <name>PH.2.5.2#49</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list. Disambiguation compares the following elements to determine if medications are identical, partially identical or different between lists:  generic name, trade (brand) name, dose, dose units, sig (signatura - instructions for use).</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="140"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#50</id>
-      <name>PH.2.5.2#50</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication on the medication list, including medication name, dose, dose units, frequency and other details, including compliance with any related instructions.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="141"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#51</id>
-      <name>PH.2.5.2#51</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a particular medication on the medication list, including the status that the medication is:&#xD;
-&gt; On hold, as directed;&#xD;
-&gt; On hold, not as directed;&#xD;
-&gt; Stopped, as directed;&#xD;
-&gt; Stopped, not as directed.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="142"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#52</id>
-      <name>PH.2.5.2#52</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render a notation of the reason the patient is not currently taking a particular medication on the medication list, including details of the reason:&#xD;
-&gt; Taking alternative medication;&#xD;
-&gt; Course completed;&#xD;
-&gt; Adverse reaction or other intolerance;&#xD;
-&gt; Cannot afford;&#xD;
-&gt; Other reasons.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="143"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#16</id>
-      <name>PH.2.5.2#16</name>
-      <notes>The system SHOULD provide the ability for the PHR Account Holder to update the medication list by indicating those medications that are actually being taken.</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="144"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#17</id>
-      <name>PH.2.5.2#17</name>
-      <notes>The system SHOULD provide the ability for the PHR Account Holder to maintain the medication list by updating the status of the medication self-administration (e.g., no longer being taken or completed the regime).</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="145"/>
-      <tag name="Optionality" value="SHOULD"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#53</id>
-      <name>PH.2.5.2#53</name>
-      <notes>The system SHALL present visual feedback for the updated status of each medication reviewed during patient-centric reconciliation.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="146"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#54</id>
-      <name>PH.2.5.2#54</name>
-      <notes>The system SHALL present visual feedback for each item on the medication list as it is reviewed during patient-centric reconciliation , showing those that have been reviewed and highlighting those that are still awaiting review.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="147"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#55</id>
-      <name>PH.2.5.2#55</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render all changes to medications in the medication list during patient-centric reconciliation, including:&#xD;
-&gt; Dosage (based on available/allowed dosages);&#xD;
-&gt; Dosage form (based on available/allowed dosage forms);&#xD;
-&gt; Dosing times (frequencies in grouped pick list, not alpha sort, allowing "other" text);&#xD;
-&gt; Option: reason for update (from pick list, allowing "other" text);&#xD;
-&gt; Option: complex dosing;&#xD;
-&gt; Option: medication indication;&#xD;
-&gt; Option: ordering prescriber.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="148"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#56</id>
-      <name>PH.2.5.2#56</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render medications added to the medication list during patient-centric reconciliation, utilizing and/or incorporating:&#xD;
-&gt; Reference medication list (e.g., RxNorm, compendia);&#xD;
-&gt; Over the counter medications;&#xD;
-&gt; Both generic and brand name medications;&#xD;
-&gt; Type ahead pick list;&#xD;
-&gt; Duplicate checks;&#xD;
-&gt; Dosage (based on available/allowed dosages);&#xD;
-&gt; Dosage form (based on available/allowed dosage forms);&#xD;
-&gt; Dosing times (frequencies in grouped pick list, not alpha sort, allowing "other" text);&#xD;
-&gt; Option: reason for addition (from pick list, allowing "other" text);&#xD;
-&gt; Option: complex dosing;&#xD;
-&gt; Option: medication indication;&#xD;
-&gt; Option: ordering prescriber.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="149"/>
+      <tag name="Row" value="115"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -1401,8 +922,56 @@
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="150"/>
+      <tag name="Row" value="116"/>
       <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#34</id>
+      <name>PH.2.5.2#34</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication, including medication name, dose, dose units, route, frequency, comments, and adherence details.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="118"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#16</id>
+      <name>PH.2.5.2#16</name>
+      <notes>The system SHALL provide the ability for the PHR Account Holder to update the medication list by indicating those medications that are actually being taken.</notes>
+      <stereotype>CI</stereotype>
+      <type>Class</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="119"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#17</id>
+      <name>PH.2.5.2#17</name>
+      <notes>The system SHALL provide the ability for the PHR Account Holder to maintain the medication list by updating the status of the medication self-administration (e.g., no longer being taken or completed the regime).</notes>
+      <stereotype>CI</stereotype>
+      <type>Class</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="120"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#35</id>
+      <name>PH.2.5.2#35</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render the addition of a medication to the patient medication list, including medication generic and brand name(s), dose, dose units, route, frequency, comments, adherence details, and ordering prescriber, using a reference source for representation and management of structured medication information (e.g., type-ahead pick lists, duplicate checking, presriber information). </notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="122"/>
+      <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
@@ -1413,55 +982,57 @@
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="151"/>
+      <tag name="Row" value="123"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#57</id>
-      <name>PH.2.5.2#57</name>
-      <notes>The system SHALL provide the ability to update a medication after it has been added to the medication list.</notes>
+      <id>MEDLISTPH.2.5.2#36</id>
+      <name>PH.2.5.2#36</name>
+      <notes>If a medication has been added, the system SHALL determine whether new drug-drug interactions are identified.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="152"/>
+      <tag name="Row" value="124"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#58</id>
-      <name>PH.2.5.2#58</name>
-      <notes>IF a medication has been added to the list during patient-centric reconciliation, THEN the system SHALL provide the ability to determine whether any new drug-drug interactions are indicated.</notes>
+      <id>MEDLISTPH.2.5.2#37</id>
+      <name>PH.2.5.2#37</name>
+      <notes>IF drug-drug interactions or other clinical safety related risks are identified, THEN the system SHALL provide the ability to manage related information (e.g., source of concern, severity of potential interaction, alerting user that interaction may need to be reviewed by clinician).</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="153"/>
+      <tag name="Row" value="125"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="Y"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#59</id>
-      <name>PH.2.5.2#59</name>
-      <notes>The system SHALL provide the ability to capture the number of doses remaining for each medication on the medication list.</notes>
+      <id>MEDLISTPH.2.5.2#38</id>
+      <name>PH.2.5.2#38</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render the modification (change) of a medication on the patient medication list, including dose, frequency, comments, and adherence, reason for update, and ordering prescriber. &#xD;
+&#xD;
+</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="154"/>
+      <tag name="Row" value="127"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#60</id>
-      <name>PH.2.5.2#60</name>
-      <notes>The system SHALL provide the ability to determine adherence to medication regimen by calculating the date and dose quantity from dispensing records compared to doses remaining on the date of patient-centric reconciliation.</notes>
+      <id>MEDLISTPH.2.5.2#39</id>
+      <name>PH.2.5.2#39</name>
+      <notes>The system SHALL provide the ability to update (i.e., modify/change) a medication after it has been added to the medication list.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="155"/>
+      <tag name="Row" value="128"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -1469,35 +1040,51 @@
     <object>
       <id>MEDLISTPH.2.5.2#14</id>
       <name>PH.2.5.2#14</name>
-      <notes>The system SHOULD provide the ability to annotate the medication list with text comments.</notes>
+      <notes>The system SHOULD provide the ability to annotate the entire medication list with a field for text comments.</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="156"/>
+      <tag name="Row" value="129"/>
       <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#61</id>
-      <name>PH.2.5.2#61</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render medication refill requests based on the threshold quantity of remaining doses identified during patient-centric reconciliation.</notes>
+      <id>MEDLISTPH.2.5.2#40</id>
+      <name>PH.2.5.2#40</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a medication and the current status of the medication. Status includes that the medication is:&#xD;
+&gt; Stopped, as directed by clinician;&#xD;
+&gt; Stopped by patient;&#xD;
+&gt; On hold, as directed by clinician;&#xD;
+&gt; On hold by patient.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="157"/>
+      <tag name="Row" value="131"/>
       <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#03</id>
-      <name>PH.2.5.2#03</name>
-      <notes>The system SHOULD provide the ability to capture dates associated with medications such as start date, fill date, and end date (e.g., so that a PHR Account Holder can keep track of multiple refills for a long-running prescription).</notes>
-      <stereotype>CI</stereotype>
-      <type>Class</type>
+      <id>MEDLISTPH.2.5.2#41</id>
+      <name>PH.2.5.2#41</name>
+      <notes>The system SHALL provide the ability to capture, maintain and render the reason the patient is not taking a medication (e.g., taking alternative medication; side effects / adverse reaction / intolerance; course completed; no longer indicated; cannot afford; not covered by insurance; etc.).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="158"/>
+      <tag name="Row" value="132"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#42</id>
+      <name>PH.2.5.2#42</name>
+      <notes>The system SHOULD provide the ability to capture the number of doses remaining for each medication.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="134"/>
       <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
@@ -1505,93 +1092,104 @@
     <object>
       <id>MEDLISTPH.2.5.2#13</id>
       <name>PH.2.5.2#13</name>
-      <notes>The system SHOULD provide the ability for the PHR Account Holder to transmit a request for a medication refill to a pharmacy, or to the prescribing provider (if refills are not available for the given prescription).</notes>
+      <notes>The system SHOULD provide the ability for the PHR Account Holder to transmit refill (both refill and renewal) requests to a pharmacy or prescribing provider.</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="159"/>
+      <tag name="Row" value="135"/>
       <tag name="Optionality" value="SHOULD"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
     <object>
-      <id>MEDLISTPH.2.5.2#62</id>
-      <name>PH.2.5.2#62</name>
-      <notes>[Original] The system SHALL provide the ability to output the current medication list and related details, including:&#xD;
-&gt; Medication name: generic, trade, generic with trade, trade with generic;&#xD;
-&gt; Medication timing: time of day;&#xD;
-&gt; Medication timing: days taken;&#xD;
-&gt; Medication dosing: amount with units;&#xD;
-&gt; Medication NDC code;&#xD;
-&gt; Medication indication;&#xD;
-&gt; Discipline responsible for medication: e.g., cariology, endocrine.&#xD;
-&#xD;
-[Noah] The system SHALL provide the ability to output the current medication list including: medication name (generic/trade), timing (time of day, days taken), dosing (amount + units), NDC code, indication, and responsible discipline.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="164"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#63</id>
-      <name>PH.2.5.2#63</name>
-      <notes>[Original] The system SHALL provide the ability to output reports for printing or export (e.g., using a style sheet):&#xD;
-&gt; Grouped by time of day, then alpha sort of generic (+ trade) and dosage in grouped sections;&#xD;
-&gt; Calendar (grid) week view, x-axis – day of week; y-axis time of day;&#xD;
-&gt; Include graphical version options with color pictures of the pills, pill markings;&#xD;
-&gt; Medical Assistant view – alpha sort of generic + (trade) name, dosage, and timing; with patient notes;&#xD;
-&gt; Clinician view – by discipline, grouped by confirm / not taking / change / add, then alpha sort of generic + (trade) name, dosage, and timing; with patient notes;&#xD;
-&gt; Patient-generated medication list (as electronic output) – all fields.&#xD;
-&#xD;
-[Noah] The system SHALL provide the ability to output printable/exportable reports including grouped time-of-day view, calendar grid view, graphical pill images, Medical Assistant view, Clinician view, and patient-generated electronic list.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="165"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#64</id>
-      <name>PH.2.5.2#64</name>
-      <notes>[Original] The system SHALL provide the ability to transmit a reviewed and/or updated medication list following patient-centric reconciliation (e.g., in preparation for an upcoming encounter):&#xD;
-&gt; Incuding any annotations;&#xD;
-&gt; Assembled as a FHIR Bundle.&#xD;
-&#xD;
-[Noah] The system SHALL provide the ability to transmit a reviewed/updated medication list (including annotations) as a FHIR Bundle following reconciliation.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="169"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#65</id>
-      <name>PH.2.5.2#65</name>
-      <notes>The system SHALL provide the ability to capture, maintain and render the patient's current medication list.</notes>
-      <stereotype>Criteria</stereotype>
-      <type>Requirement</type>
-      <parentId>MEDLIST</parentId>
-      <tag name="Row" value="173"/>
-      <tag name="Optionality" value="SHALL"/>
-      <tag name="Conditional" value="N"/>
-      <tag name="Dependent" value="N"/>
-    </object>
-    <object>
-      <id>MEDLISTPH.2.5.2#21</id>
-      <name>PH.2.5.2#21</name>
-      <notes>The system MAY provide the ability to capture instructions regarding the cessation of selected items on the medication list. For example, the PHR Account holder could receive instructions from the family physician, the pharmacist, or from the medication manufacturer regarding behaviors that are permitted based on the cessation of a given medication. Another example is that the PHR Account Holder could be informed that the use of a blood thinner (e.g., Warfarin) must not be stopped abruptly. Finally, the PHR Account Holder could be informed that it is necessary to take the full course of a given prescribed medication.</notes>
+      <id>MEDLISTPH.2.5.2#03</id>
+      <name>PH.2.5.2#03</name>
+      <notes>The system SHOULD provide the ability to capture medication-related dates (e.g., start date, fill date, end date).</notes>
       <stereotype>CI</stereotype>
       <type>Class</type>
       <parentId>MEDLIST</parentId>
-      <tag name="Row" value="187"/>
+      <tag name="Row" value="136"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#43</id>
+      <name>PH.2.5.2#43</name>
+      <notes>The system SHOULD provide the ability to capture, maintain and render medication refill requests based on remaining dose thresholds (e.g., system calculation to message patient to request a refill of a regularly taken medication).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="137"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#44</id>
+      <name>PH.2.5.2#44</name>
+      <notes>The system MAY provide the ability to determine upcoming refills needed from calculations based on pill counts, dates and frequencies as ordered.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="138"/>
       <tag name="Optionality" value="MAY"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#45</id>
+      <name>PH.2.5.2#45</name>
+      <notes>The system SHALL present visual feedback to the patient (e.g., row color changes, strikethrough, other indicators) as the status of each medication is actioned upon during reconciliation. </notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="139"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#46</id>
+      <name>PH.2.5.2#46</name>
+      <notes>The system SHALL present visual feedback to the patient (e.g., absence of change in row color) highlighting medications awaiting review during reconciliation.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="140"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#47</id>
+      <name>PH.2.5.2#47</name>
+      <notes>The system SHALL provide the ability to render reports for printing or export (e.g., using a style sheet) per the preference of the patient - recommended presentation examples include: &#xD;
+&gt; Grouped by time of day, then alpha sort of generic (+ trade) name of medications with dosages as grouped sections (e.g., list of medications taken once a day in the AM);&#xD;
+&gt; Calendar (grid) week view, with x-axis as day of week and y-axis as time of day;&#xD;
+&gt; Include graphical version options with color pictures of the pills, pill markings;&#xD;
+&gt; Medical Assistant view – alpha sort of generic + (trade) name, dosage, and timing; with patient notes;&#xD;
+&gt; Clinician view – by discipline, grouped by confirm / not taking / update / add, then alpha sort of generic + (trade) name, dosage, and timing; with patient notes;&#xD;
+&gt; Patient-generated medication list (as electronic output) – all fields.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="145"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+    </object>
+    <object>
+      <id>MEDLISTPH.2.5.2#48</id>
+      <name>PH.2.5.2#48</name>
+      <notes>The system SHALL provide the ability to transmit a reviewed and/or updated medication list following patient-performed medication reconciliation (e.g., in preparation for an upcoming encounter):&#xD;
+&gt; Assembled as a data bundle (e.g., as a FHIR data bundle per a FHIR specification)&#xD;
+&gt; Incuding patient annotations.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>MEDLIST</parentId>
+      <tag name="Row" value="149"/>
+      <tag name="Optionality" value="SHALL"/>
       <tag name="Conditional" value="N"/>
       <tag name="Dependent" value="N"/>
     </object>
@@ -1938,11 +1536,6 @@
       <destId>PHR_R2145</destId>
     </relationship>
     <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#28</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
       <type>Generalization</type>
       <sourceId>MEDLISTPH.2.5.2#01</sourceId>
       <destId>PHR_R2146</destId>
@@ -1956,6 +1549,11 @@
       <type>Generalization</type>
       <sourceId>MEDLISTPH.2.5.2#04</sourceId>
       <destId>PHR_R2149</destId>
+    </relationship>
+    <relationship>
+      <type>Aggregation</type>
+      <sourceId>MEDLISTPH.2.5.2#28</sourceId>
+      <destId>PHR_R2145</destId>
     </relationship>
     <relationship>
       <type>Aggregation</type>
@@ -1973,11 +1571,6 @@
       <destId>PHR_R2145</destId>
     </relationship>
     <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#08</sourceId>
-      <destId>PHR_R2153</destId>
-    </relationship>
-    <relationship>
       <type>Aggregation</type>
       <sourceId>MEDLISTPH.2.5.2#32</sourceId>
       <destId>PHR_R2145</destId>
@@ -1986,6 +1579,16 @@
       <type>Aggregation</type>
       <sourceId>MEDLISTPH.2.5.2#33</sourceId>
       <destId>PHR_R2145</destId>
+    </relationship>
+    <relationship>
+      <type>Generalization</type>
+      <sourceId>MEDLISTPH.2.5.2#08</sourceId>
+      <destId>PHR_R2153</destId>
+    </relationship>
+    <relationship>
+      <type>Generalization</type>
+      <sourceId>MEDLISTPH.2.5.2#18</sourceId>
+      <destId>PHR_R2163</destId>
     </relationship>
     <relationship>
       <type>Aggregation</type>
@@ -2006,11 +1609,6 @@
       <type>Aggregation</type>
       <sourceId>MEDLISTPH.2.5.2#35</sourceId>
       <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#18</sourceId>
-      <destId>PHR_R2163</destId>
     </relationship>
     <relationship>
       <type>Generalization</type>
@@ -2093,139 +1691,9 @@
       <destId>PHR_R2145</destId>
     </relationship>
     <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#08</sourceId>
-      <destId>PHR_R2153</destId>
-    </relationship>
-    <relationship>
       <type>Aggregation</type>
       <sourceId>MEDLISTPH.2.5.2#48</sourceId>
       <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#49</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#50</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#51</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#52</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#16</sourceId>
-      <destId>PHR_R2161</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#17</sourceId>
-      <destId>PHR_R2162</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#53</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#54</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#55</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#56</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#18</sourceId>
-      <destId>PHR_R2163</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#04</sourceId>
-      <destId>PHR_R2149</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#57</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#58</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#59</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#60</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#14</sourceId>
-      <destId>PHR_R2159</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#61</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#03</sourceId>
-      <destId>PHR_R2148</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#13</sourceId>
-      <destId>PHR_R2158</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#62</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#63</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#64</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Aggregation</type>
-      <sourceId>MEDLISTPH.2.5.2#65</sourceId>
-      <destId>PHR_R2145</destId>
-    </relationship>
-    <relationship>
-      <type>Generalization</type>
-      <sourceId>MEDLISTPH.2.5.2#21</sourceId>
-      <destId>PHR_R2166</destId>
     </relationship>
   </relationships>
 </model>

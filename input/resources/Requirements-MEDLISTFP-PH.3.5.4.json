@@ -99,10 +99,10 @@
       "key": "MEDLISTFP-PH.3.5.4-04",
       "label": "PH.3.5.4#04",
       "conformance": [
-        "MAY"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The system MAY provide the ability to manage the PHR Account Holder‚Äôs response(s) to notifications and/or reminders.",
+      "requirement": "The system SHOULD provide the ability to manage the PHR Account Holder's response(s) to notifications and/or reminders.",
       "derivedFrom": "PH.3.5.4#4"
     },
     {

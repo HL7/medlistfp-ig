@@ -7,11 +7,6 @@
 @> npm install
 ```
 
-## Run max file script and FM compiler
-```
-@> node script/convert-excel-to-max.js
-```
-
 ## Build IG
 ```
 @> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar

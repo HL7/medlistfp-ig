@@ -162,7 +162,7 @@
         "MAY"
       ],
       "conditionality": false,
-      "requirement": "The system MAY provide the ability to capture preauthorization requirements for medications and health services specific to the PHR Account Holder‚Äôs policies.",
+      "requirement": "The system MAY provide the ability to capture preauthorization requirements for medications and health services specific to the PHR Account Holder's policies.",
       "derivedFrom": "S.2.2#7"
     },
     {

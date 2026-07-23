@@ -82,7 +82,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The system SHOULD provide the ability to manage consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law (e.g., capturing the PHR Account Holder's personal representative‚Äôs authority (such as a note from the PHR Account Holder or a pointer to a legal document) to enable decisions to be made on behalf of the PHR Account Holder).",
+      "requirement": "The system SHOULD provide the ability to manage consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law (e.g., capturing the PHR Account Holder's personal representative's authority (such as a note from the PHR Account Holder or a pointer to a legal document) to enable decisions to be made on behalf of the PHR Account Holder).",
       "derivedFrom": "PH.1.5#3"
     },
     {
@@ -242,7 +242,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The system SHALL provide the ability to manage consents and authorizations for access to external systems where patient information may be stored (e.g., other EHR/HIT systems, HIEs, Pharmacy dispense systems, pharmacy benefits management systems) according to organizational policy or jurisdictional law."
+      "requirement": "The system SHALL provide the ability to manage consents and authorizations for access to external systems where patient medication information may be stored (e.g., other EHR/HIT systems, HIEs, pharmacy dispense systems, pharmacy benefits management systems) according to user preference, organizational policy, and/or jurisdictional law."
     }
   ]
 }

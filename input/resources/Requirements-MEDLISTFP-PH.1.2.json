@@ -242,7 +242,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The system SHOULD provide the ability to manage a patient's travel record, including dates and locations visited."
+      "requirement": "The system SHOULD provide the ability to manage a patient's travel record, including dates and locations visited (e.g., to prepare staff to take precautions to reduce transmission of communicable diseases during an office visit)."
     }
   ]
 }

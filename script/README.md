@@ -1,19 +1,11 @@
-Use Case Spreadsheet
+## Run max file script and FM compiler
 
-* Convert Actor (columns B) -> ActorDefinition
-    .status = #draft
-    .type = 'C' contains 'System'?#system:#person
-    .name = PascalCase(B)
-    .title = B
-* Convert Use Case to ExampleScenario and reference the actors
-    .actor.type = 'B' contains 'System'?#system:#person
-    .actor.key = row#
-    .actor.title = B
-    E contains steps; for each line create process.title
-
-ExampleScenario for Use Case with processes for each Event step and then sub-proces for each row in E
-
-Starts at row 7.
--------------
-See Gemini chat history for prompts... TODO: document the mapping result...
-**N.B. requestReference needed for rendering to be correct otherwise the steps are appended in 1 line!**
+1. update xlsx filename
+2. node script/convert-excel-to-max.js
+3. cp ~/eclipse-workspace/EHRSFM/medlistfp-ig/script/medlist-profiledefinition.max ~/Shared/VisualStudio\ Projects/ehrsfm-tool/import-scripts/output/
+4. cd ~/Shared/VisualStudio Projects/ehrsfm-tool
+5. start docker (see README with ehrsfm-tool)
+6. (ehrs-tool)@> ./gen-medlist.sh
+7. cp ~/Shared/VisualStudio\ Projects/ehrsfm-tool/import-scripts/output/medlist.max ~/eclipse-workspace/EHRSFM/medlistfp-ig/script/
+8. (medlistfp)@> node script/max2fhir.js
+9. use prompt to repair stereotypes

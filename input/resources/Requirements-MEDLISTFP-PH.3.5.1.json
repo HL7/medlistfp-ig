@@ -33,16 +33,16 @@
         },
         {
           "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
-          "valueCode": "NC"
+          "valueCode": "C"
         }
       ],
       "key": "MEDLISTFP-PH.3.5.1-01",
       "label": "PH.3.5.1#01",
       "conformance": [
-        "MAY"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The system MAY maintain a health calendar function for recording and displaying scheduled health appointments or events.",
+      "requirement": "The system SHOULD maintain a health calendar function for recording and displaying scheduled health appointments or events.",
       "derivedFrom": "PH.3.5.1#1"
     },
     {
