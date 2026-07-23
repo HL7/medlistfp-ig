@@ -71,6 +71,11 @@
           "name": "hidden.html",
           "generation": "markdown",
           "title": "Only here because IG QA requires"
+        },
+        {
+          "name": "authoring-process.html",
+          "generation": "markdown",
+          "title": "Authoring Process and Artifact Generation"
         }
       ]
     },

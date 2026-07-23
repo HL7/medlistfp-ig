@@ -2,7 +2,7 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const xml2js = require('xml2js');
 
-const inputFile = 'script/Patient Centric Med List Med Reconciliation-Use Case Analysis Worksheet-20260705.xlsx';
+const inputFile = 'input/images/Patient Centric Med List Med Reconciliation-Use Case Analysis Worksheet-20260705.xlsx';
 const outputFile = 'script/medlist-profiledefinition.max';
 const baseFile = 'script/phrs-fm.max';
 
