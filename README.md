@@ -1,9 +1,20 @@
+## Initial Setup
 ```
 > docker run --name=medlistfp-ig -it -v "$(pwd)":/app node:latest /bin/bash
 @> (once) apt update; apt install graphviz jekyll
 @> (once) dpkg -i jdk-25_linux-x64_bin.deb
 @> (once) npm install -g fsh-sushi
-@> java -jar input-cache/publisher.jar -ig ig.ini -tx n/a
 @> npm install
-@> node script/convert-excel-to-fsh.js
 ```
+
+## Run max file script and FM compiler
+```
+@> node script/convert-excel-to-max.js
+```
+
+## Build IG
+```
+@> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
+@> java -jar input-cache/publisher.jar -ig ig.ini -tx n/a
+```
+

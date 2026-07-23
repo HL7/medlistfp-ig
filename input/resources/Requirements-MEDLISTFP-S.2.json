@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-S.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "S_2_Financial_Management",
+  "title": "S.2 Financial Management (Header)",
+  "status": "active",
+  "description": "The purpose of this section is to provide the system support in managing financial information related to benefit plan coverage and service utilization.",
+  "purpose": "",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-S.2"
+  ]
+}

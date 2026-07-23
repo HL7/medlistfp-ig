@@ -1,0 +1,209 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-S.2.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "S_2_2",
+  "title": "S.2.2 (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to capture, read, update and remove access to health insurance benefit information including but not limited to past, current and future (if known) benefit plans.",
+  "purpose": "Robust management features allow the PHR Account Holder to actively maintain their health insurance benefits information for selected benefits related to PHR Account Holder coverage needs. Over an extended period of time, with the likelihood of multiple insurance providers, it may be important for there to be information management capability for the varied payer sources, varied levels of benefit information, and varied levels of coverage including allowed coverages, exclusions, and limitations on specific coverages. Information management capabilities may include analytics regarding the PHR Account Holder's desired care such as: the selection of the most appropriate insurance plan for the current disease or injury; or the amount of deductibles that can be expected under varying insurance plans. Out-of-date or non-current insurance plan and benefit information can be used to compare different benefit packages, costs, and/or expenses over time resulting in a better understanding of health care as it pertains to health insurance coverage.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-S.2.2"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-01",
+      "label": "S.2.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture selected insurance benefit information that is pertinent to the PHR Account Holder's needs.",
+      "derivedFrom": "S.2.2#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-02",
+      "label": "S.2.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain the selected health insurance benefit information.",
+      "derivedFrom": "S.2.2#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-03",
+      "label": "S.2.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to capture and render updates made to selected insurance plan benefit information that is pertinent to the PHR Account Holder's needs. For example, the PHR Account Holder might receive information regarding changes in deductible amounts, categories of coverage (e.g., new medicines or new therapies being covered), terms-of-coverage (e.g., changes in co-pay amounts), prior authorization requirements, and updates to the list of health care providers that are within the insurance carrier's network (including specific facilities and providers).",
+      "derivedFrom": "S.2.2#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-04",
+      "label": "S.2.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage health insurance benefit information from multiple payer sources.",
+      "derivedFrom": "S.2.2#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-05",
+      "label": "S.2.2#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to link to the health insurance benefit PHR-S as the source for multiple categories of account distributions which may be related to the varied financial implications of funds usage in accounts (such as Consumer-Directed Health Plans).",
+      "derivedFrom": "S.2.2#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-06",
+      "label": "S.2.2#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage multiple categories of account distributions which may be related to the varied financial implications of funds usage in accounts (such as Consumer-Directed Health Plans).",
+      "derivedFrom": "S.2.2#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-07",
+      "label": "S.2.2#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture preauthorization requirements for medications and health services specific to the PHR Account Holder‚Äôs policies.",
+      "derivedFrom": "S.2.2#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-08",
+      "label": "S.2.2#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture, store, and render referral requirements. Note: Referral requirements are those requirements that must be met by a healthcare provider as specified by the healthcare payer or a care-coordinating entity. A care-coordinating entity consists of a group of healthcare professionals who have formally agreed to manage the healthcare of a patient.",
+      "derivedFrom": "S.2.2#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.2-09",
+      "label": "S.2.2#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and present an indication that an insurance coverage / benefit / deductible-amount / co-pay amount has changed (e.g., by receiving a notice from an insurance providers of the existence of a new benefit, an expired benefit, or a changed benefit.)",
+      "derivedFrom": "S.2.2#9"
+    }
+  ]
+}

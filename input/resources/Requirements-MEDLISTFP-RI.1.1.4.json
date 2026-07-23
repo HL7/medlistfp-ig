@@ -1,0 +1,309 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-RI.1.1.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "RI_1_1_4",
+  "title": "RI.1.1.4 (Function)",
+  "status": "active",
+  "description": "Attest Record Entries (1 or more instances)",
+  "purpose": "Occurs when an agent causes the system to capture the agent's digital signature (or equivalent indication) during formal validation of record entry content. \n\nReference: ISO 21089-2018, Section 15.4.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-RI.1.1.4"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-01",
+      "label": "RI.1.1.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.1](Requirements-MEDLISTFP-TI.1.1.html) (Entity Authentication).",
+      "derivedFrom": "RI.1.1.4#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-02",
+      "label": "RI.1.1.4#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.2](Requirements-MEDLISTFP-TI.1.2.html) (Entity Authorization).",
+      "derivedFrom": "RI.1.1.4#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-03",
+      "label": "RI.1.1.4#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to attest (approve and apply signature to) Record Entry content by the author.",
+      "derivedFrom": "RI.1.1.4#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-04",
+      "label": "RI.1.1.4#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture the signature event (e.g., digital signature) of the Attesting Author, binding signature to Record Entry content.",
+      "derivedFrom": "RI.1.1.4#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-05",
+      "label": "RI.1.1.4#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to maintain any attestable Record Entry content added or changed with the content's author",
+      "derivedFrom": "RI.1.1.4#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-06",
+      "label": "RI.1.1.4#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present the status of attestable Record Entry content which has not been attested, conforming to function [RI.1.3.1](Requirements-MEDLISTFP-RI.1.3.1.html) (Record Pending State).",
+      "derivedFrom": "RI.1.1.4#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-07",
+      "label": "RI.1.1.4#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the attester is different than the author(s), THEN the system SHALL provide the ability to maintain Record Entry content by properly authenticated and authorized users different from the author (e.g., counter-signature) according to scope of practice, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "RI.1.1.4#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-08",
+      "label": "RI.1.1.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage digital signatures as the means for attestation.",
+      "derivedFrom": "RI.1.1.4#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-09",
+      "label": "RI.1.1.4#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF more than one author contributed to the Record Entry content, THEN the system SHALL provide the ability to maintain all authors/contributors associated with their content.",
+      "derivedFrom": "RI.1.1.4#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-10",
+      "label": "RI.1.1.4#10",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF Record Entry content is attested by someone other than the author, THEN the system SHALL maintain and display the author(s) and attester.",
+      "derivedFrom": "RI.1.1.4#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-11",
+      "label": "RI.1.1.4#11",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to present a minimum set of information that identifies the author of Record Entry content according to scope of practice, organizational policy, and/or jurisdictional law (e.g., name, credential, and/or role (such as Karen Smith, RN)).",
+      "derivedFrom": "RI.1.1.4#11"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-12",
+      "label": "RI.1.1.4#12",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture the signature type of the entity (individual, PHR or other system, or organization) sending Record Entry content.",
+      "derivedFrom": "RI.1.1.4#12"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-13",
+      "label": "RI.1.1.4#13",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture the signature type of the entity (individual, PHR or other system, or organization) receiving Record Entry content.",
+      "derivedFrom": "RI.1.1.4#13"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-RI.1.1.4-14",
+      "label": "RI.1.1.4#14",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture all signature types of the entities through which Record Entry content has passed.",
+      "derivedFrom": "RI.1.1.4#14"
+    }
+  ]
+}

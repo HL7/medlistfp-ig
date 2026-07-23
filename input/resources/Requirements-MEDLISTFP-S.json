@@ -1,0 +1,23 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-S",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMSection"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-actors",
+      "valueString": "The PHR Account Holder is the principal user of the Supportive PHR-S functions. However, the PHR Account Holder may designate other individuals to perform certain administrative functions on his/her behalf.$EX$$AC$"
+    }
+  ],
+  "name": "Personal_Health_Support",
+  "title": "Personal Health Support",
+  "status": "active",
+  "description": "Supportive PHR-S functions are the subset of PHR-S functions that assist with the administrative and financial requirements associated with the delivery of healthcare. Supportive PHR-S functions also provide input to systems that perform medical research, promote public health, and seek to improve the quality of healthcare delivered.\nAll functions within the Supportive Section have an identifier starting with “S”.\n\nExample(s):\nFor example, Supportive PHR-S functions will allow the PHR Account Holder to electronically query local or national registries, provide the ability to participate in a registry and obtain updates from the registry as to the PHR Account Holder status within that registry."
+}

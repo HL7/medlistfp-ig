@@ -1,0 +1,329 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.2.5.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "PH_2_5_4",
+  "title": "PH.2.5.4 (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder’s list of known allergens and adverse reactions with all pertinent information.",
+  "purpose": "Allergies, intolerances, sensitivities, and adverse reactions must be reviewed with every new prescription to avoid an allergic reaction. \n\nEnvironmental and food allergens should be listed and maintained here, as well as allergies to bee sting, sunlight, or substances (e.g., latex, metal, or contrast media (such as dye).\n\nExample(s): The system SHALL provide the ability to enter, store, update and display information related to allergic and adverse reactions or intolerances to drug and non-drug allergens or substances.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.2.5.4"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-01",
+      "label": "PH.2.5.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage information related to allergy, intolerance, and adverse reaction to drugs, foods, or environmental triggers as unique, discrete entries (including, for example, substances such as latex, metal, and contrast media (such as dye)).",
+      "derivedFrom": "PH.2.5.4#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-02",
+      "label": "PH.2.5.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the reason for entry of the allergy, intolerance or adverse reaction.",
+      "derivedFrom": "PH.2.5.4#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-03",
+      "label": "PH.2.5.4#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage information related to allergic and adverse reactions to drug and non-drug allergens or substances.",
+      "derivedFrom": "PH.2.5.4#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-04",
+      "label": "PH.2.5.4#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage information regarding the reaction type.",
+      "derivedFrom": "PH.2.5.4#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-05",
+      "label": "PH.2.5.4#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage information regarding the severity of a reaction.",
+      "derivedFrom": "PH.2.5.4#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-06",
+      "label": "PH.2.5.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain associated allergic reactions to the prevention protocols and/or medications being taken.",
+      "derivedFrom": "PH.2.5.4#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-07",
+      "label": "PH.2.5.4#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage an indication regarding the negation of a health reaction (e.g., No Known Allergies (NKA), No Known Drug Allergies (NKDA), No Known Food Allergies (NKFA), No Known Sensitivies, or No Known Intolerances).",
+      "derivedFrom": "PH.2.5.4#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-08",
+      "label": "PH.2.5.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the source of allergy, intolerance, and adverse reaction information.",
+      "derivedFrom": "PH.2.5.4#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-09",
+      "label": "PH.2.5.4#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain an indication regarding the deactivation of an item on the allergy, intolerance, and/or adverse reaction lists.",
+      "derivedFrom": "PH.2.5.4#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-10",
+      "label": "PH.2.5.4#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the reason for the deactivation of an item on the allergy, intolerance, and/or adverse reaction lists.",
+      "derivedFrom": "PH.2.5.4#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-11",
+      "label": "PH.2.5.4#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present allergies, intolerances and adverse reactions that have been deactivated.",
+      "derivedFrom": "PH.2.5.4#11"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-12",
+      "label": "PH.2.5.4#12",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to present the list of allergies, intolerances, and/or adverse reactions in an order that is defined by the PHR Account Holder.",
+      "derivedFrom": "PH.2.5.4#12"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-13",
+      "label": "PH.2.5.4#13",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture and maintain the date on which allergy information was entered.",
+      "derivedFrom": "PH.2.5.4#13"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-14",
+      "label": "PH.2.5.4#14",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain the approximate date of the allergy, intolerance, sensitivity, and/or adverse reaction occurrence.",
+      "derivedFrom": "PH.2.5.4#14"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.4-15",
+      "label": "PH.2.5.4#15",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a standard adverse reaction report within a jurisdiction (e.g., a standard report regarding an adverse reaction to a vaccine). For example, an adverse reaction report could be transmitted to a public health organization.",
+      "derivedFrom": "PH.2.5.4#15"
+    }
+  ]
+}

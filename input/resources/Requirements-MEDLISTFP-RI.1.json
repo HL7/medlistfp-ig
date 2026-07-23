@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-RI.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "RI_1_Record_Lifecycle_and_Lifespan",
+  "title": "RI.1 Record Lifecycle and Lifespan (Header)",
+  "status": "active",
+  "description": "Manage Record Lifecycle and Lifespan",
+  "purpose": "Actions are taken to support patient health. Actions are taken in provision of healthcare to individuals. Actions are taken as the result of rules-based PHR System algorithms. Actors (i.e., patients, providers, users, systems) take Actions. (Actions broadly encompass tasks, acts, procedures or services performed or provided.) The PHR System captures Actions taken and creates corresponding Record Entries. Record Entries provide persistent evidence of Action occurrence, context, disposition, facts, findings and observations. From the point of Record Entry origination to the end of its lifespan, the PHR System manages each Entry consistent with and according to scope of practice, organizational policy, and jurisdictional law. In support of individual health and in provision of healthcare to individuals, Actors perform Actions and Actions have corresponding Entries in the PHR Record, (i.e., Action instances are documented by Record Entry instances). Record Entries may be captured during the course of the Action or sometime thereafter. The Actor (author/source) of the Record Entry may be the same as an Actor performing the Action or not. The PHR-S Functional Model does not specify a particular relationship of Actions and corresponding Record Entries. It may be one to one, many to one or even one to many. Actions have associated metadata (e.g., who, what, when, where, why, how, under what conditions, in what context). The corresponding Record Entry captures this metadata along with other Action and Record Entry related information. \n\nEach Record Entry also includes its own provenance metadata such as who (authoring Actor) and when (documented). Record Entries may be encapsulated to bind Actor (individual, organization, and/or system) signatures to data and metadata content and data/time of occurrence. Actions and related Record Entries capture a chronology of patient health and healthcare and also a chronology of operations and services provided in/by a healthcare enterprise. Record Entries reflect changes in health information from the time it was created, to the time it was amended, sent, received, etc. In this manner, each Record Entry serves as persistent evidence of an Action taken, enabling providers to maintain comprehensive information that may be needed for legal, business, and disclosure purposes. To satisfy these purposes, Record Entries must also be retained and persisted without alteration. Record Entries have both a lifecycle and a lifespan. Lifecycle Events include originate, retain, amend, verify, attest, access/view, de-identify, transmit/receive, and more. Lifecycle Events occur at various points in a Record Entry lifespan, always starting with a point of origination and retention (i.e., when the Entry is first created and stored). A Record Entry may have a pre and post Event state if content is modified. In this case, the original Record Entry is preserved (with signature binding) and a new Entry is created (with new signature binding). A Record Entry contains data and metadata, in multiple formats, following various conventions and standards. Included data may be tagged, and/or delimited, structured (concise, encoded, computable), or unstructured (free form, non-computable). Data may be encoded as text, document, images, audio, waveforms, in ASCII, binary or other encoding. Structured data may be characterized as being concise, encoded, computable, and may be divided into discrete fields. \n\nExamples of structured health information include:\n- patient residence (non-codified, but discrete field)\n- diastolic blood pressure (numeric) \n- coded laboratory result or observation\n- coded diagnosis \n- patient risk assessment questionnaire with multiple-choice answers. \n\nUnstructured data may be characterized as being free form, and/or non-computable. Unstructured health record information is information that is not divided into discrete fields AND not represented as numeric, enumerated or codified data. \n\nExamples of unstructured health record information include:\n- text (text message to physician) \n- word processing document (a letter from a family member) \n- image (photograph of a patient or a scanned image of insurance card) \n- multimedia (dictated report or a voice recording). \n\nContext may determine whether data are structured or unstructured. For example, a progress note might be standardized and structured in some systems (e.g., Subjective/Objective/Assessment/Plan) but unstructured in other systems. The PHR System manages Record Lifecycle Events for each Record Entry, including pre and post Event record states, continuity, persistence and related Record Audit Logs.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-RI.1"
+  ]
+}

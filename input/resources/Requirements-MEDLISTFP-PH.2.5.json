@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.2.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "PH_2_5_Manage_Historical_and_Current_State_Data",
+  "title": "PH.2.5 Manage Historical and Current State Data (Function)",
+  "status": "active",
+  "description": "Maintain the summary lists depicting the PHR Account Holder’s current medical state and history.",
+  "purpose": "The current state data set is a data model of the PHR Account Holder that is useful to the PHR Account Holder, but is particularly useful to any healthcare provider who is asked by the PHR Account Holder for help. These data characterize the PHR Account Holder in current time and is useful in the evaluation of new conditions and predictive of how they might respond to treatments and/or therapies. Receiving these data in the PHR in an electronic and automated fashion may obviate having to recreate the data manually with every new encounter. For many of these elements, the PHR Account Holder is the primary authority. The following data elements are examples of information that is managed over time, across encounters with providers, and for particular health conditions:\n\n- Problems (including Diagnoses)\n- Medications\n- Test Results \n- Allergies and intolerances\n- Medical history\n- Surgical history\n- Immunizations\n- Family history\n- Genetic information\n- Social history, including family relationship and work information.\n- Providers' notes\n\nWork information could be defined using the Occupational Data for Health (ODH) data elements:\n- Current employment status (e.g., employed for wages); \n- Current job data: job employment type (e.g., self-employed), occupation and industry with the start and end dates, employer name and location, job duties, work schedule; \n- Usual, or longest-held, occupation and industry, with duration and start date.\n\nSpecific complaints, history of present illness, review of systems, and the physical examination are more episodic and encounter specific.\n\nExample(s): Current Problems, Medications taken, allergies, immunizations, past medical illnesses, surgeries, family history, and social history including habits along with recent diagnostic studies provide data useful for directing care.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.2.5"
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.1.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "PH_1_5",
+  "title": "PH.1.5 (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to manage consent directives and authorizations.",
+  "purpose": "A variety of consent directives and authorizations are needed to provide healthcare services. Each institution such as an emergency room, each provider, or each health care service such as an operative procedure may require its own informed consent be captured, displayed, and verified before care can be provided. The consent directives may be externally sourced with copies made available for the PHR Account Holder to capture and store. Some consent directives or authorizations may be authored by the PHR Account Holder granting authorizations such as a parent granting ad hoc authorization for emergency care for a child.\n\nNote: The system FM is agnostic to any specific consent/authorization approach. For example, consent/authorization directives may apply to the data in the PHR itself or could integrate with an external access control service.\n\nNote: A consent and privacy framework is best described in a functional profile (i.e., a subset) of the PHR-S FM and ought to be specified in accordance to organizational policy and/or jurisdictional law. Therefore, it is assumed that a consent and privacy model will be specified by the functional profile.\n\nExample(s): Maintain current authorizations in relation to specific health record functions. The PHR Account Holder may desire to see the authorizations associated with a specific clinical activity, such as treatment or surgery, along with that event in the PHR Account Holder's PHR-S.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.1.5"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-01",
+      "label": "PH.1.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to capture an indication that a PHR Account Holder has completed applicable consent directives and authorizations according to organizational policy and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-02",
+      "label": "PH.1.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture information regarding the external location of the PHR Account Holder's applicable consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-03",
+      "label": "PH.1.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law (e.g., capturing the PHR Account Holder's personal representative‚Äôs authority (such as a note from the PHR Account Holder or a pointer to a legal document) to enable decisions to be made on behalf of the PHR Account Holder).",
+      "derivedFrom": "PH.1.5#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-04",
+      "label": "PH.1.5#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage an indication that a PHR Account Holder has granted access, withheld access, or revoked access to applicable consent directives and authorizations according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-05",
+      "label": "PH.1.5#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage consent and authorization forms on-line according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-06",
+      "label": "PH.1.5#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render consent and authorization forms (including, for example, in print-format) according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-07",
+      "label": "PH.1.5#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render electronic copies of authorization and/or consent directives associated with a specific clinical activity, such as a treatment or surgery according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-08",
+      "label": "PH.1.5#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render electronic copies of authorization and/or consent directives chronologically according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-09",
+      "label": "PH.1.5#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage documentation related to a PHR Account Holder Proxy's consent or authorization according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-10",
+      "label": "PH.1.5#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture information that identifies the signer (and co-signer, if any) of a consent and/or authorization document according to user preference, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "PH.1.5#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.5-11",
+      "label": "PH.1.5#11",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage consents and authorizations for access to external systems where patient information may be stored (e.g., other EHR/HIT systems, HIEs, Pharmacy dispense systems, pharmacy benefits management systems) according to organizational policy or jurisdictional law."
+    }
+  ]
+}

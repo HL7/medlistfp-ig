@@ -1,0 +1,101 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "$PACKAGE_ID$",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "$STANDARDS_STATUS$"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "ehr"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "5.0.0"
+    }
+  ],
+  "url": "$CANONICAL$/ImplementationGuide/$PACKAGE_ID$",
+  "version": "1.0.0",
+  "name": "$FMID_PREFIX$",
+  "title": "HL7 PHR-S FM R2.1 - Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International / Electronic Health Records",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/ehr"
+        }
+      ]
+    }
+  ],
+  "description": "This is the Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1 based on HL7 PHR-S FM R2.1",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "packageId": "$PACKAGE_ID$",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "dependsOn": [
+    {
+      "id": "ehrsfmr2",
+      "uri": "http://hl7.org/ehrs/uv/phrsfmr2/ImplementationGuide/hl7.ehrs.uv.phrsfmr2",
+      "packageId": "hl7.ehrs.uv.phrsfmr2",
+      "version": "2.0.1"
+    }
+  ],
+  "definition": {
+    "grouping": $GROUPINGS$,
+    "resource": $RESOURCES$,
+    "page": {
+      "name": "index.html",
+      "generation": "markdown",
+      "title": "Home Page",
+      "page": [
+        {
+          "name": "hidden.html",
+          "generation": "markdown",
+          "title": "Only here because IG QA requires"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "releaselabel"
+        },
+        "value": "Informative"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "copyrightyear"
+        },
+        "value": "2025"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "shownav"
+        },
+        "value": "true"
+      }
+    ]
+  }
+}

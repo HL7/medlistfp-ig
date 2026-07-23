@@ -1,0 +1,312 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.ehrs.us.medlistfp",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "ehr"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "5.0.0"
+    }
+  ],
+  "url": "http://hl7.org/ehrs/us/medlistfp/ImplementationGuide/hl7.ehrs.us.medlistfp",
+  "version": "1.0.0",
+  "name": "MEDLISTFP",
+  "title": "HL7 PHR-S FM R2.1 - Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International / Electronic Health Records",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/ehr"
+        }
+      ]
+    }
+  ],
+  "description": "This is the Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1 based on HL7 PHR-S FM R2.1",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.ehrs.us.medlistfp",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "dependsOn": [
+    {
+      "id": "ehrsfmr2",
+      "uri": "http://hl7.org/ehrs/uv/phrsfmr2/ImplementationGuide/hl7.ehrs.uv.phrsfmr2",
+      "packageId": "hl7.ehrs.uv.phrsfmr2",
+      "version": "2.0.1"
+    }
+  ],
+  "definition": {
+    "grouping": [
+  {
+    "id": "PH",
+    "name": "Personal Health Section",
+    "description": "Personal Health PHR-S functions are the subset of PHR-S functions that enable an individual to manage information about his or her healthcare. These functions provide direction as to the individual’s ability to interact with a Personal Health Record in such a way so as to individualize the record and maintain a current and accurate record of his or her healthcare activities. The functions include activities such as managing wellness, prevention and encounters. These functions are designed to encourage and allow an individual to participate actively in their healthcare and better access the resources that allow for self-education and monitoring.\nAll functions within the Personal Health Section have an identifier starting with “PH”."
+  },
+  {
+    "id": "S",
+    "name": "Personal Health Support Section",
+    "description": "Supportive PHR-S functions are the subset of PHR-S functions that assist with the administrative and financial requirements associated with the delivery of healthcare. Supportive PHR-S functions also provide input to systems that perform medical research, promote public health, and seek to improve the quality of healthcare delivered.\nAll functions within the Supportive Section have an identifier starting with “S”."
+  },
+  {
+    "id": "RI",
+    "name": "Record Infrastructure Section",
+    "description": "The Record Infrastructure Section consists of functions common to EHR System record management, particularly those functions foundational to managing record lifecycle (origination, attestation, amendment, access/use, translation, transmittal/disclosure, receipt, de-identification, archive...) and record lifespan (persistence, indelibility, continuity, audit, encryption).\n\nThe RI and TI Sections are identical between the PHR and EHR System Functional Models, reflecting the need for common and compatible record management and trust infrastructures.  Note that there may be some functions more directly applicable to EHR systems than PHR systems.\n\nRI functions are core and foundational to all other functions of the Model (PH, S). RI functions may be implemented within the architecture of a single system or across a tightly coupled suite of systems (applications). All functions within the Record Infrastructure Section have an identifier starting with “RI”."
+  },
+  {
+    "id": "OTH",
+    "name": "Other",
+    "description": ""
+  }
+],
+    "resource": [
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.1"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.1.1"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.1.2"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.1.5"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.2"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.2.5"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.2.5.2"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.2.5.4"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.3"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.3.5"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.3.5.1"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.3.5.4"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.6"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-PH.6.3"
+    },
+    "isExample": false,
+    "groupingId": "PH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-S"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-S.2"
+    },
+    "isExample": false,
+    "groupingId": "S"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-S.2.1"
+    },
+    "isExample": false,
+    "groupingId": "S"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-S.2.2"
+    },
+    "isExample": false,
+    "groupingId": "S"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-S.3"
+    },
+    "isExample": false,
+    "groupingId": "S"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-S.3.1"
+    },
+    "isExample": false,
+    "groupingId": "S"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-RI"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-RI.1"
+    },
+    "isExample": false,
+    "groupingId": "RI"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-RI.1.1"
+    },
+    "isExample": false,
+    "groupingId": "RI"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-RI.1.1.1"
+    },
+    "isExample": false,
+    "groupingId": "RI"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP-RI.1.1.4"
+    },
+    "isExample": false,
+    "groupingId": "RI"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/MEDLISTFP"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  }
+],
+    "page": {
+      "name": "index.html",
+      "generation": "markdown",
+      "title": "Home Page",
+      "page": [
+        {
+          "name": "hidden.html",
+          "generation": "markdown",
+          "title": "Only here because IG QA requires"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "releaselabel"
+        },
+        "value": "Informative"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "copyrightyear"
+        },
+        "value": "2025"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "shownav"
+        },
+        "value": "true"
+      }
+    ]
+  }
+}

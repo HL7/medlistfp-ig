@@ -1,0 +1,109 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.3.5.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "PH_3_5_1",
+  "title": "PH.3.5.1 (Function)",
+  "status": "active",
+  "description": "Provide a health calendar to record and display health care events.",
+  "purpose": "A health calendar provides a method to view time related healthcare activity both in the future as scheduled events and in the past as historic events. It is a handy and well understood format. The calendar can also be used as a data input device, mimicking the paper calendar where clinical observations (such as gallbladder attacks or menstrual periods) can be written directly onto a calendar and captured as a timed note. This idea was put forward from usability studies with lay people how they would like to interact with their PHR.\n\nExample(s): IF a health calendar function is provided, THEN future appointments and other timed events SHOULD be displayed on the health calendar.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.3.5.1"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.3.5.1-01",
+      "label": "PH.3.5.1#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY maintain a health calendar function for recording and displaying scheduled health appointments or events.",
+      "derivedFrom": "PH.3.5.1#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.3.5.1-02",
+      "label": "PH.3.5.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF a health calendar function is provided, THEN the system SHOULD present future appointments and other timed events on the health calendar.",
+      "derivedFrom": "PH.3.5.1#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.3.5.1-03",
+      "label": "PH.3.5.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF a health calendar function is provided, THEN the system SHOULD provide the ability to annotate directly onto the health calendar as date stamped text entries.",
+      "derivedFrom": "PH.3.5.1#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.3.5.1-04",
+      "label": "PH.3.5.1#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF a health calendar function is provided, THEN the system MAY present care plans (e.g., lifelong immunization schedules or cancer surveillance tests) as health calendar entries.",
+      "derivedFrom": "PH.3.5.1#4"
+    }
+  ]
+}

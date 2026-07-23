@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "PH_2_Manage_Historical_Clinical_Data_and_Current_State_Data",
+  "title": "PH.2 Manage Historical Clinical Data and Current State Data (Header)",
+  "status": "active",
+  "description": "Historical health information as well as current health status should be captured and maintained in the health record.",
+  "purpose": "To obtain historical information to populate the PHR, the PHR Account Holder may use strategies that include entering historical information directly or importing at least part of this data from outside electronic data sources. An outside service such as an employer, insurance plan, provider or care delivery organization may sponsor a particular PHR and add data to the record from their data sources. The PHR Account Holder may use similar strategies to populate their current state information.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.2"
+  ]
+}

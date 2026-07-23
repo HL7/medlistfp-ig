@@ -1,6 +1,28 @@
 == Suppressed Messages ==
 
-# Just informational
-Reference to experimental %
-Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+# There is no reason for OIDs in this IG
 % could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+
+# Inserted by the publisher
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+
+# Used in extension inserted by the publisher
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# Maybe someday
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# Acceptable "...must end in a period."
+%FMFLC10%
+%FMFLC12%
+%FMHC007%
+%FMHC005%
+
+# Accepted as is by EHR WG
+%FMHC004%
+
+# https://chat.fhir.org/#narrow/channel/196008-ig-publishing-requirements/topic/EHR.20product.20family.20issue/near/562294702
+Constraint failed: txt-2: 'The narrative SHALL have some non-whitespace content (htmlChecks())' (defined in http://hl7.org/fhir/StructureDefinition/Narrative)
+
+# Known: In preparation for future QA 
+Constraint failed: GENGRAM: 'Criterion does not match general grammar structure.%

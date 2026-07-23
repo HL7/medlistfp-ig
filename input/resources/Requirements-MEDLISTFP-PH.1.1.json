@@ -1,0 +1,246 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "PH_1_1",
+  "title": "PH.1.1 (Function)",
+  "status": "active",
+  "description": "Unambiguously identify the PHR Account Holder; correctly link the information with the PHR Account Holder and vice-versa.",
+  "purpose": "The PHR Account Holder must be confident that the system can reliably and uniquely identify them and provide access to their health record. Nothing precludes the PHR Account Holder from having more than one PHR such as a tethered PHR-S with their Primary Care Provider and a separate self-maintained PHR. The following functions apply to a single PHR system (PHR-S).",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.1.1"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-01",
+      "label": "PH.1.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present a user guide or training material to assist the PHR Account Holder in installing, initializing, registering, or operating their PHR.",
+      "derivedFrom": "PH.1.1#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-02",
+      "label": "PH.1.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to store more than one unique identifier for each PHR Account Holder's record. For example, the PHR Account Holder may have received health information from multiple caregivers, each caregiver having a unique Patient Identifier for that PHR Account Holder (also known as an Account Number). When the PHR Account Holder shares information with an individual caregiver, the PHR Account Holder may desire to utilize the Patient Identifier that is known to that specific caregiver.",
+      "derivedFrom": "PH.1.1#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-03",
+      "label": "PH.1.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, store, and integrate and/or link the PHR Account Holder's unique identifiers from multiple external sources (e.g., medical record number, insurance account number, or voluntary unique identifiers).",
+      "derivedFrom": "PH.1.1#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-04",
+      "label": "PH.1.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to uniquely identify a PHR Account Holder.",
+      "derivedFrom": "PH.1.1#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-05",
+      "label": "PH.1.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability (through a controlled method) to capture, integrate, and/or link information that is determined to be the PHR Account Holder's information that is stored in external systems. Note: A controlled method enables the PHR Account Holder to choose a course of action from a limited set of actions. For example, the PHR-S could provide a controlled method by which the PHR Account Holder could choose to link to an external DICOM image, but import the Report regarding that DICOM image instead.",
+      "derivedFrom": "PH.1.1#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-06",
+      "label": "PH.1.1#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF health information has been incorrectly associated with a PHR Account Holder, THEN the system SHALL provide the ability to annotate the information as being erroneous (or as believed to be erroneous) in the PHR Account Holder's account in which it was incorrectly associated, and represent that information as being erroneous.",
+      "derivedFrom": "PH.1.1#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-07",
+      "label": "PH.1.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF health information has been incorrectly associated with a PHR Account Holder, THEN the system SHOULD provide the ability to transmit information regarding the error to the source of the information according to organizational policy and/or jurisdictional law.",
+      "derivedFrom": "PH.1.1#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-08",
+      "label": "PH.1.1#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to archive, delete, and/or purge part or all of a PHR Account Holder's information (e.g., information that is obsolete, inactive, or nullified) according to user preference and/or consent, organizational policy (e.g., according to a statement of terms and conditions), and/or jurisdictional law.",
+      "derivedFrom": "PH.1.1#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-09",
+      "label": "PH.1.1#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render queries for information capture from external systems."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-10",
+      "label": "PH.1.1#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render the status of queries to external systems, e.g., medication list and medication reconciliation event queries."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.1.1-11",
+      "label": "PH.1.1#11",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to transmit queries to external systems to capture patient information (e.g., query for active medication list)."
+    }
+  ]
+}

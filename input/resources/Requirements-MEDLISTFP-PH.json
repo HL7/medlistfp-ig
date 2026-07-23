@@ -1,0 +1,23 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMSection"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-actors",
+      "valueString": "The principal users of Personal Health functions are expected to be individuals referenced as PHR Account Holders; the patient or subject-of-care and healthcare providers will have access to certain functions to view, update or make corrections to their Personal Health Record. The PHR Account Holder will receive support for making healthcare-related decisions, as well as support from the PHR-S and EHR-S to enable effective electronic communication between providers, and between the provider and the PHR Account Holder or PHR Account Holder’s designated representative.$EX$$AC$"
+    }
+  ],
+  "name": "Personal_Health",
+  "title": "Personal Health",
+  "status": "active",
+  "description": "Personal Health PHR-S functions are the subset of PHR-S functions that enable an individual to manage information about his or her healthcare. These functions provide direction as to the individual’s ability to interact with a Personal Health Record in such a way so as to individualize the record and maintain a current and accurate record of his or her healthcare activities. The functions include activities such as managing wellness, prevention and encounters. These functions are designed to encourage and allow an individual to participate actively in their healthcare and better access the resources that allow for self-education and monitoring.\nAll functions within the Personal Health Section have an identifier starting with “PH”.\n\nExample(s):\nWhen an individual has symptoms of a common cold, a Personal Health function will enable the PHR Account Holder to record that event including dates, times and self- medication. That same information can be exported to the EHR-S of the individual’s healthcare provider for access in an encounter or for medication ordering. Additionally, decision support functions within the Personal Health section will alert the PHR Account Holder that a vaccination is due and will offer contraindication alerts for the medication if not indicated with symptoms of a cold."
+}

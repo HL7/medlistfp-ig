@@ -1,0 +1,268 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.6.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "PH_6_3",
+  "title": "PH.6.3 (Function)",
+  "status": "active",
+  "description": "The system should enable the PHR Account Holder to capture information in preparation for an encounter with a provider and to support ongoing interactions with that provider. The system should enable the PHR Account Holder to request appointments with health care providers and capture information in preparation for the encounter.",
+  "purpose": "The PHR Account Holder may fulfill specific requests for data or obtain requested diagnostic studies prior to the formal encounter. This may include providing PHR-S access to the new provider. The provider could also communicate with various members of the PHR Account Holder's care team.\n\nExample(s): The PHR Account Holder MAY fill out a current Review Of Systems (ROS) template questionnaire and specific chief complaint related questions as part of the History of Present Illness (HPI) prior to the encounter.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.6.3"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-01",
+      "label": "PH.6.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture and maintain communications between providers and the PHR Account Holder and/or the PHR Account Holder's Proxy according to organizational policy and/or jurisdictional law.",
+      "derivedFrom": "PH.6.3#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-02",
+      "label": "PH.6.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage scanned documents based on the document type (e.g., based on the quality, format, origin, completion status, or intended diagnostic use (e.g., a screening versus a diagnostic breast examination)).",
+      "derivedFrom": "PH.6.3#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-03",
+      "label": "PH.6.3#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain communications (e.g., date, entity, or details of communication) that were originated by the PHR Account Holder or Authorized PHR User.",
+      "derivedFrom": "PH.6.3#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-04",
+      "label": "PH.6.3#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render PHR authorization information (e.g., to support a designee's claim that the designee is authorized to receive PHR Account Holder-related health information).",
+      "derivedFrom": "PH.6.3#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-05",
+      "label": "PH.6.3#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render to the PHR Account Holder a notification of the arrival of a provider-originated communication.",
+      "derivedFrom": "PH.6.3#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-06",
+      "label": "PH.6.3#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange communications between providers and PHR Account Holders using a secure connection.",
+      "derivedFrom": "PH.6.3#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-07",
+      "label": "PH.6.3#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to PH.6.3 (Communication Between Provider and PHR Account Holder and/or the PHR Account Holder's Representative) in order to exchange information.",
+      "derivedFrom": "PH.6.3#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-08",
+      "label": "PH.6.3#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to TI.1.8 (Patient Privacy and Confidentiality) to support adherence to various levels of confidentiality when exchanging information.",
+      "derivedFrom": "PH.6.3#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-09",
+      "label": "PH.6.3#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to tag a set of elements within the PHR Account Holder's self-generated care plan that the PHR Account Holder intends to send to selected care team members.",
+      "derivedFrom": "PH.6.3#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-10",
+      "label": "PH.6.3#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the PHR Account Holder is creating a self-generated care plan, THEN the system SHOULD provide the ability for the PHR Account Holder to tag a set of selected care team members (to whom the PHR Account Holder intends to send certain information).",
+      "derivedFrom": "PH.6.3#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-11",
+      "label": "PH.6.3#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit a tagged set of elements within the PHR Account Holder's self-generated care plan to a tagged set of selected care team members.",
+      "derivedFrom": "PH.6.3#11"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.6.3-12",
+      "label": "PH.6.3#12",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage information relevant to the upcoming encounter provided by the patient or account holder (e.g., questionnaires or surveys)."
+    }
+  ]
+}

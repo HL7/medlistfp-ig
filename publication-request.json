@@ -1,0 +1,15 @@
+{
+    "package-id": "hl7.ehrs.us.medlistfp",
+    "version": "1.0.0-ballot",
+    "path": "http://hl7.org/ehrs/uv/medlistfp/2026Sep",
+    "mode": "working",
+    "status": "ballot",
+    "sequence": "Informative",
+    "title": "HL7 PHR-S FM R2.1 - Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1",
+    "ci-build": "https://build.fhir.org/ig/HL7/medlistfp-ig",
+    "category": "EHR-S Family",
+    "introduction": "This is the Patient-Centric Med List and Med Reconciliation Functional Profile.",
+    "desc": "This is the initial release",
+    "descmd": "This is the initial release",
+    "first": "true"
+}

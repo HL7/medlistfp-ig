@@ -1,0 +1,1285 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.2.5.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "PH_2_5_2",
+  "title": "PH.2.5.2 (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder’s medication list.",
+  "purpose": "Medication lists are managed over time, whether over the course of a visit or stay, or the lifetime of a patient. All pertinent dates, including medication start, modification, and end dates can be stored. Medication histories, (for example, alternative supplements, over-the-counter medications, and herbal medications) may be relevant for review. Medication lists are not limited to medication orders recorded by providers, but may include, for example, pharmacy dispense/supply records, patient-reported medications, and additional information such as age-specific dosage.\n\nExample(s): The system maintains a medication list that may be followed by the PHR Account Holder and referenced by his or her providers and pharmacists. Copies of the PHR medication list may be kept by their providers in their EHRs.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.2.5.2"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-01",
+      "label": "PH.2.5.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture PHR Account Holder -specific medication data from a provider's EHR system, a pharmacy system, or from other sources.",
+      "derivedFrom": "PH.2.5.2#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-02",
+      "label": "PH.2.5.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and update a fill status for each prescription.",
+      "derivedFrom": "PH.2.5.2#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-03",
+      "label": "PH.2.5.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture dates associated with medications such as start date, fill date, and end date (e.g., so that a PHR Account Holder can keep track of multiple refills for a long-running prescription).",
+      "derivedFrom": "PH.2.5.2#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-04",
+      "label": "PH.2.5.2#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture medications that are not on the PHR Account Holder's existing medication list(s) or the existing medication history(s).",
+      "derivedFrom": "PH.2.5.2#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-05",
+      "label": "PH.2.5.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to render a notification to a prescriber or provider that the PHR Account Holder believes that a medication was erroneously captured or duplicated.",
+      "derivedFrom": "PH.2.5.2#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-06",
+      "label": "PH.2.5.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and update a dispensing status for each medication order.",
+      "derivedFrom": "PH.2.5.2#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-07",
+      "label": "PH.2.5.2#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present the list of medications to be self-administered.",
+      "derivedFrom": "PH.2.5.2#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-08",
+      "label": "PH.2.5.2#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render the timing, route of administration, and dose of all medications on the medication list.",
+      "derivedFrom": "PH.2.5.2#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-09",
+      "label": "PH.2.5.2#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture available instructions regarding the administration of selected items on the medication list (e.g., by receiving administration instruction from the family physician, or by downloading information from the pharmacy).",
+      "derivedFrom": "PH.2.5.2#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-10",
+      "label": "PH.2.5.2#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system captures available instructions regarding the administration of selected items on the medication list, THEN the system MAY provide the ability for the PHR Account Holder to render available instructions regarding the administration of selected items on the medication list (e.g., to help the PHR Account Holder determine whether to discuss with their provider adjusting the dosing of Warfarin after receiving the results of an updated International Normalized Ratio (INR) laboratory test).",
+      "derivedFrom": "PH.2.5.2#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-11",
+      "label": "PH.2.5.2#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render a notification to the PHR Account Holder regarding a specific medication administration subject to the PHR Account Holder’s preconfigured modalities for transmitting various types of notifications. For example, on a specific date/time via text message, or for a specific event (such as strenuous exercise via email), or for a specific condition (such as failure to complete an activity of daily living via a phone call to a family member).",
+      "derivedFrom": "PH.2.5.2#11"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-12",
+      "label": "PH.2.5.2#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture medication self-administration details (e.g., timestamps, observations, complications, and/or the reason that a medication dose was not taken). For example, a mother could capture an indication that her baby was unwilling or unable to swallow a pill/liquid.",
+      "derivedFrom": "PH.2.5.2#12"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-13",
+      "label": "PH.2.5.2#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to transmit a request for a medication refill to a pharmacy, or to the prescribing provider (if refills are not available for the given prescription).",
+      "derivedFrom": "PH.2.5.2#13"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-14",
+      "label": "PH.2.5.2#14",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to annotate the medication list with text comments.",
+      "derivedFrom": "PH.2.5.2#14"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-15",
+      "label": "PH.2.5.2#15",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a medication list containing only medications selected by the PHR Account Holder.",
+      "derivedFrom": "PH.2.5.2#15"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-16",
+      "label": "PH.2.5.2#16",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to update the medication list by indicating those medications that are actually being taken.",
+      "derivedFrom": "PH.2.5.2#16"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-17",
+      "label": "PH.2.5.2#17",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to maintain the medication list by updating the status of the medication self-administration (e.g., no longer being taken or completed the regime).",
+      "derivedFrom": "PH.2.5.2#17"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-18",
+      "label": "PH.2.5.2#18",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render prescription and non-prescription items (including dietary supplements) as discrete data and/or as lists.",
+      "derivedFrom": "PH.2.5.2#18"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-19",
+      "label": "PH.2.5.2#19",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to receive current medications and a medication history from an external source (e.g., an EHR system, an insurance plan, a payer, or a pharmacy).",
+      "derivedFrom": "PH.2.5.2#19"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-20",
+      "label": "PH.2.5.2#20",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to receive, maintain, and render information from an external source (e.g., from an EHR system or from a pharmacy system) regarding the difference between medications that were ordered and medications that were actually dispensed.",
+      "derivedFrom": "PH.2.5.2#20"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-21",
+      "label": "PH.2.5.2#21",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture instructions regarding the cessation of selected items on the medication list. For example, the PHR Account holder could receive instructions from the family physician, the pharmacist, or from the medication manufacturer regarding behaviors that are permitted based on the cessation of a given medication. Another example is that the PHR Account Holder could be informed that the use of a blood thinner (e.g., Warfarin) must not be stopped abruptly. Finally, the PHR Account Holder could be informed that it is necessary to take the full course of a given prescribed medication.",
+      "derivedFrom": "PH.2.5.2#21"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-22",
+      "label": "PH.2.5.2#22",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to specify query selection criteria, e.g., encounter type (inpatient, ER...), how far to look back (query back to date), medications ordered and dispensed, over the counter medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-23",
+      "label": "PH.2.5.2#23",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render the query/response for a the medication list associated with the most recent medication reconciliation event, for example:\n• Constrained to the last outpatient encounter, ER visit, discharge from inpatient or extended care encounter;\n• Constrained to EHR systems of other providers;\n• Constrained to event date/time, organization, practitioner, encounter type."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-24",
+      "label": "PH.2.5.2#24",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to the Pharmacy Benefit Manager (PBM), e.g., a query via FHIR or API."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-25",
+      "label": "PH.2.5.2#25",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to any dispensing system, e.g., a query via FHIR or API."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-26",
+      "label": "PH.2.5.2#26",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain and render the most recent query/response for a medication list to any system, e.g., EHR systems of other providers, PHR systems used by the patient."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-27",
+      "label": "PH.2.5.2#27",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render the patient's current medication list, incorporating lists gathered from external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-28",
+      "label": "PH.2.5.2#28",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture and maintain separate medication lists from each external system responding to a query, until a subsequent step which then disambiguates and incorporates each unique medication into a single list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-29",
+      "label": "PH.2.5.2#29",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render a list of source systems (and providers) from which current (active) or past medications were received."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-30",
+      "label": "PH.2.5.2#30",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render the patient's current medication list, including those captured from external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-31",
+      "label": "PH.2.5.2#31",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render each medication using a reference source for structured and free text representation of the medication name, dosing, NDC and other medication information (e.g., reference sources include RxNorm, compendia or similar)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-32",
+      "label": "PH.2.5.2#32",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, store and render the medication list from a previous patient-centric medication reconciliation session."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-33",
+      "label": "PH.2.5.2#33",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list (comparing generic name, trade name, dose, dose units, and sig).\n\n[Original] The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list. Disambiguation compares the following elements to determine if medications are identical, partially identical or different between lists:  generic name, trade (brand) name, dose, dose units, sig (signatura - instructions for use).\n\n[Update 27 Feb 2026 - Gary]:  The system SHALL provide the ability to determine the aggregation of medication lists from multiple sources via a disambiguation function.  Disambiguation compares the following elements to decide if medications match, partially match or do not match: generic name, trade (brand) name(s), dose, dose units and frequency."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-34",
+      "label": "PH.2.5.2#34",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication, including medication name, dose, dosage form, frequency and compliance details.\n\n[Original] The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication on the medication list, including medication name, dose, dose units, frequency and other details, including compliance with any related instructions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-35",
+      "label": "PH.2.5.2#35",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture, maintain and render medications added during reconciliation, utilizing reference lists, OTC meds, generic/brand names, type-ahead pick list, duplicate checks, dosage, dosing times, reason for addition, complex dosing, indication, and ordering prescriber.\n\n[Original] The system SHALL provide the ability to capture, maintain and render medications added to the medication list during patient-centric reconciliation, utilizing and/or incorporating:\n- Reference medication list (e.g., RxNorm, compendia);\n- Over the counter medications;\n- Both generic and brand name medications;\n- Type ahead pick list;\n- Duplicate checks;\n- Dosage (based on available/allowed dosages);\n- Dosage form (based on available/allowed dosage forms);\n- Dosing times (frequencies in grouped pick list, not alpha sort, allowing \"other\" text);\n- Option: reason for addition (from pick list, allowing \"other\" text);\n- Option: complex dosing;\n- Option: medication indication (reason for prescribing);\n- Option: ordering prescriber."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-36",
+      "label": "PH.2.5.2#36",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] If a medication has been added during reconciliation, the system SHALL determine whether new drug-drug interactions are indicated.\n\n[Original] IF a medication has been added to the list during patient-centric reconciliation, THEN the system SHOULD provide the ability to determine whether any new drug-drug interactions are indicated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-37",
+      "label": "PH.2.5.2#37",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF drug-drug interactions or other clinical safety related risks are identified, THEN the system SHALL provide the ability to tag the corresponding medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-38",
+      "label": "PH.2.5.2#38",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render all changes during reconciliation, including dosage, dosage form, dosing times, reason for update, complex dosing, medication indication, and ordering prescriber."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-39",
+      "label": "PH.2.5.2#39",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to update a medication after it has been added to the medication list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-40",
+      "label": "PH.2.5.2#40",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a medication, with status: On hold (as directed / not as directed); Stopped (as directed / not as directed).\n\n[Original] The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a particular medication on the medication list, including the status that the medication is:\n> On hold, as directed;\n> On hold, not as directed;\n> Stopped, as directed;\n> Stopped, not as directed."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-41",
+      "label": "PH.2.5.2#41",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture, maintain and render the reason the patient is not taking a medication: Taking alternative medication; Course completed; Adverse reaction; Cannot afford; Other.\n\n[Original] The system SHALL provide the ability to capture, maintain and render a notation of the reason the patient is not currently taking a particular medication on the medication list, including details of the reason:\n> Taking alternative medication;\n> Course completed;\n> Adverse reaction or other intolerance;\n> Cannot afford;\n> Other reasons."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-42",
+      "label": "PH.2.5.2#42",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture the number of doses remaining for each medication.\n\n[Original] The system SHALL provide the ability to capture the number of doses remaining for each medication on the medication list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-43",
+      "label": "PH.2.5.2#43",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL provide the ability to capture, maintain and render medication refill requests based on remaining dose thresholds.\n\n[Original] The system SHALL provide the ability to capture, maintain and render medication refill requests based on the threshold quantity of remaining doses identified during patient-centric reconciliation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-44",
+      "label": "PH.2.5.2#44",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL present visual feedback for the updated status of each medication reviewed during reconciliation.\n\n[Original] The system SHALL present visual feedback for the updated status of each medication reviewed during patient-centric reconciliation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-45",
+      "label": "PH.2.5.2#45",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Noah] The system SHALL present visual feedback showing reviewed items and highlighting items awaiting review during reconciliation.\n\n[Original] The system SHALL present visual feedback for each item on the medication list as it is reviewed during patient-centric reconciliation , showing those that have been reviewed and highlighting those that are still awaiting review."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-46",
+      "label": "PH.2.5.2#46",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render the patient's current medication list, including those captured from external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-47",
+      "label": "PH.2.5.2#47",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render each medication using a reference source for structured and free text representation of the medication name, dosing, NDC and other medication information (e.g., reference sources include RxNorm, compendia or similar)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-48",
+      "label": "PH.2.5.2#48",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, store and render the medication list from a previous patient-centric medication reconciliation session."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-49",
+      "label": "PH.2.5.2#49",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render the results of disambiguation of the medication list. Disambiguation compares the following elements to determine if medications are identical, partially identical or different between lists:  generic name, trade (brand) name, dose, dose units, sig (signatura - instructions for use)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-50",
+      "label": "PH.2.5.2#50",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render confirmation that the patient is currently taking a particular medication on the medication list, including medication name, dose, dose units, frequency and other details, including compliance with any related instructions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-51",
+      "label": "PH.2.5.2#51",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render a notation that the patient is not currently taking a particular medication on the medication list, including the status that the medication is:\n> On hold, as directed;\n> On hold, not as directed;\n> Stopped, as directed;\n> Stopped, not as directed."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-52",
+      "label": "PH.2.5.2#52",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render a notation of the reason the patient is not currently taking a particular medication on the medication list, including details of the reason:\n> Taking alternative medication;\n> Course completed;\n> Adverse reaction or other intolerance;\n> Cannot afford;\n> Other reasons."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-53",
+      "label": "PH.2.5.2#53",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present visual feedback for the updated status of each medication reviewed during patient-centric reconciliation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-54",
+      "label": "PH.2.5.2#54",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present visual feedback for each item on the medication list as it is reviewed during patient-centric reconciliation , showing those that have been reviewed and highlighting those that are still awaiting review."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-55",
+      "label": "PH.2.5.2#55",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render all changes to medications in the medication list during patient-centric reconciliation, including:\n> Dosage (based on available/allowed dosages);\n> Dosage form (based on available/allowed dosage forms);\n> Dosing times (frequencies in grouped pick list, not alpha sort, allowing \"other\" text);\n> Option: reason for update (from pick list, allowing \"other\" text);\n> Option: complex dosing;\n> Option: medication indication;\n> Option: ordering prescriber."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-56",
+      "label": "PH.2.5.2#56",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render medications added to the medication list during patient-centric reconciliation, utilizing and/or incorporating:\n> Reference medication list (e.g., RxNorm, compendia);\n> Over the counter medications;\n> Both generic and brand name medications;\n> Type ahead pick list;\n> Duplicate checks;\n> Dosage (based on available/allowed dosages);\n> Dosage form (based on available/allowed dosage forms);\n> Dosing times (frequencies in grouped pick list, not alpha sort, allowing \"other\" text);\n> Option: reason for addition (from pick list, allowing \"other\" text);\n> Option: complex dosing;\n> Option: medication indication;\n> Option: ordering prescriber."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-57",
+      "label": "PH.2.5.2#57",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to update a medication after it has been added to the medication list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-58",
+      "label": "PH.2.5.2#58",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF a medication has been added to the list during patient-centric reconciliation, THEN the system SHALL provide the ability to determine whether any new drug-drug interactions are indicated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-59",
+      "label": "PH.2.5.2#59",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture the number of doses remaining for each medication on the medication list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-60",
+      "label": "PH.2.5.2#60",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to determine adherence to medication regimen by calculating the date and dose quantity from dispensing records compared to doses remaining on the date of patient-centric reconciliation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-61",
+      "label": "PH.2.5.2#61",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render medication refill requests based on the threshold quantity of remaining doses identified during patient-centric reconciliation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-62",
+      "label": "PH.2.5.2#62",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Original] The system SHALL provide the ability to output the current medication list and related details, including:\n> Medication name: generic, trade, generic with trade, trade with generic;\n> Medication timing: time of day;\n> Medication timing: days taken;\n> Medication dosing: amount with units;\n> Medication NDC code;\n> Medication indication;\n> Discipline responsible for medication: e.g., cariology, endocrine.\n\n[Noah] The system SHALL provide the ability to output the current medication list including: medication name (generic/trade), timing (time of day, days taken), dosing (amount + units), NDC code, indication, and responsible discipline."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-63",
+      "label": "PH.2.5.2#63",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Original] The system SHALL provide the ability to output reports for printing or export (e.g., using a style sheet):\n> Grouped by time of day, then alpha sort of generic (+ trade) and dosage in grouped sections;\n> Calendar (grid) week view, x-axis – day of week; y-axis time of day;\n> Include graphical version options with color pictures of the pills, pill markings;\n> Medical Assistant view – alpha sort of generic + (trade) name, dosage, and timing; with patient notes;\n> Clinician view – by discipline, grouped by confirm / not taking / change / add, then alpha sort of generic + (trade) name, dosage, and timing; with patient notes;\n> Patient-generated medication list (as electronic output) – all fields.\n\n[Noah] The system SHALL provide the ability to output printable/exportable reports including grouped time-of-day view, calendar grid view, graphical pill images, Medical Assistant view, Clinician view, and patient-generated electronic list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-64",
+      "label": "PH.2.5.2#64",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Original] The system SHALL provide the ability to transmit a reviewed and/or updated medication list following patient-centric reconciliation (e.g., in preparation for an upcoming encounter):\n> Incuding any annotations;\n> Assembled as a FHIR Bundle.\n\n[Noah] The system SHALL provide the ability to transmit a reviewed/updated medication list (including annotations) as a FHIR Bundle following reconciliation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "N"
+        }
+      ],
+      "key": "MEDLISTFP-PH.2.5.2-65",
+      "label": "PH.2.5.2#65",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render the patient's current medication list."
+    }
+  ]
+}

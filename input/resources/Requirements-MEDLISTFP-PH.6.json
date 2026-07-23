@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "PH_6_Manage_Encounters_with_Providers",
+  "title": "PH.6 Manage Encounters with Providers (Header)",
+  "status": "active",
+  "description": "Manage information for scheduling, preparation, and assimilation of knowledge gained by encounters with providers.",
+  "purpose": "Each interaction with a provider, including office visits, virtual visits, hospitalizations, telephone conversations, or diagnostic procedures, comprise an encounter. Some encounters are non-discretionary such as emergent admission to a level 1 trauma center. Many encounters are initiated by providers in the course of care such as a scheduled chemotherapy treatment. Some encounters are initiated by the PHR Account Holder requiring additional steps facilitated by their PHR-S.\n\nExample(s): The Account Holder makes a self-assessment that his or her chest pain warrants urgent evaluation and telephones an ambulance service. Access to the PHR Account Holder’s PHR information is provided to the ambulance crew and emergency room staff. The resulting assessments, updates to the current data set including problems, procedures, and medications, and new care plans from the hospital evaluation are then incorporated into the PHR Account Holder’s PHR-S during or shortly after the encounter concludes. The Primary Care Provider receives an alert to the changes.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.6"
+  ]
+}

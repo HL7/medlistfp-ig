@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "PH_1_PHR_Account_Holder_Profile",
+  "title": "PH.1 PHR Account Holder Profile (Header)",
+  "status": "active",
+  "description": "Manage PHR Account Holder demographics, preferences, Advance Directives, consent directives and authorizations.",
+  "purpose": "The person that is the subject of the personal health record is referred to as the PHR Account Holder. The PHR Account Holder may also be represented by the parent/guardian, or a designated representative (proxy) assigned by the PHR Account Holder or otherwise authorized entity. The PHR includes relevant demographic information and other administrative statements necessary to provide care such as Advance Directives or consents for care.\n\nExample(s): Display and maintain demographics or preferences such as the PHR Account Holder's preferred first name or religious preferences.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.1"
+  ]
+}

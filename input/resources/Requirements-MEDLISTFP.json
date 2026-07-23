@@ -1,0 +1,19 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FunctionalModel"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "MEDLIST",
+  "title": "MEDLIST",
+  "status": "active",
+  "description": "*intentionally left blank*"
+}

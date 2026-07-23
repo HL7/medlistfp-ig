@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-S.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "S_3_Administration_Management",
+  "title": "S.3 Administration Management (Header)",
+  "status": "active",
+  "description": "The purpose of this section is to provide the system support in managing the PHR-S and the interaction with other PHR and EHR systems. It also serves as a set of functions to manage documentation related to the PHR-S as well as legal documents that affect or may affect the PHR Account Holder.",
+  "purpose": "",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-S.3"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-PH.3.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
+    }
+  ],
+  "name": "PH_3_5_Manage_Tools_and_Functions_to_Assist_Self_Care",
+  "title": "PH.3.5 Manage Tools and Functions to Assist Self Care (Header)",
+  "status": "active",
+  "description": "Provide various functions to allow the Account Holder to manage their health care events.",
+  "purpose": "The healthcare activities required of the Account Holder may be minimal and manageable. For some they may be complex, confusing, and overwhelming. Keeping track of multiple overlapping problems, providers, and care plans will take organization to manage successfully. Using the commonly understood desktop tools can aid the Account Holder to break down complicated processes into more manageable tasks and organize them. These tools may include:\n- The health calendar\n- The task list\n- The contact list\n- Reminders\n- Alerts\n- Recommendations\n\nExample(s): Implement a complex care plan in the form of tasks, reminders, alerts, and calendar entries.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-PH.3.5"
+  ]
+}

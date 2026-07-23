@@ -1,0 +1,189 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-S.2.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
+    }
+  ],
+  "name": "S_2_1",
+  "title": "S.2.1 (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to request and/or receive and read information on their general health insurance benefits.",
+  "purpose": "PHR Account Holders may want to centralize administrative information related to the insurance accounts that he/she participate in. Administrative information such as group, group number, policy number, member identification number, effective and termination dates, probationary periods, pre-existing condition constraints, prior authorization or referral requirements and others are important data for provider offices for billing purposes. Current and prior insurance coverage information is important for correct billing and payment. Detail of multiple coverages allows for coordination of benefits information to be easily provided.\n\nThe ability to capture information of separate riders such as extra major medical coverage or cancer specific coverages in addition to routine benefit plans assists the PHR Account Holder in better knowledge and utilization of the financial resources available for payments. The system should allow the PHR Account Holder to display patient responsibility and benefit plan covered costs – both estimated and final – for a given event (e.g., test, procedure, surgery, or provider appointment).\n\nIn newer plan types such as Consumer Directed Health Plans (CDHP), this information will help the PHR Account Holder determine the financial implications of his/her treatment options, alternative treatment options and provide information that may be needed by the provider.",
+  "derivedFrom": [
+    "http://hl7.org/ehrs/uv/phrsfmr2/Requirements/PHRSFMR2-S.2.1"
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-01",
+      "label": "S.2.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture health insurance benefit information.",
+      "derivedFrom": "S.2.1#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-02",
+      "label": "S.2.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render health insurance benefit information.",
+      "derivedFrom": "S.2.1#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-03",
+      "label": "S.2.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage multiple payer sources of health insurance benefits information.",
+      "derivedFrom": "S.2.1#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-04",
+      "label": "S.2.1#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture insurance type (e.g., medical or dental).",
+      "derivedFrom": "S.2.1#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-05",
+      "label": "S.2.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture insurer(s) contact information.",
+      "derivedFrom": "S.2.1#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-06",
+      "label": "S.2.1#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for a PHR Account Holder to determine and present estimated PHR Account Holder responsibility and insurance covered costs for an healthcare-related event.",
+      "derivedFrom": "S.2.1#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-07",
+      "label": "S.2.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for a PHR Account Holder to determine and present final PHR Account Holder responsibility and insurance determination for an event.",
+      "derivedFrom": "S.2.1#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "MEDLISTFP-S.2.1-08",
+      "label": "S.2.1#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to store, determine, and present (i.e., track) multiple categories of account distributions related to the varied financial implications of funds usage in Consumer-Directed Health Plan (CDHP) accounts according to the PHR Account Holder's authorization, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "S.2.1#8"
+    }
+  ]
+}

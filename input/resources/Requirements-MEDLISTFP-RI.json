@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "MEDLISTFP-RI",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMSection"
+    ]
+  },
+  "name": "Record_Infrastructure",
+  "title": "Record Infrastructure",
+  "status": "active",
+  "description": "The Record Infrastructure Section consists of functions common to EHR System record management, particularly those functions foundational to managing record lifecycle (origination, attestation, amendment, access/use, translation, transmittal/disclosure, receipt, de-identification, archive...) and record lifespan (persistence, indelibility, continuity, audit, encryption).\n\nThe RI and TI Sections are identical between the PHR and EHR System Functional Models, reflecting the need for common and compatible record management and trust infrastructures.  Note that there may be some functions more directly applicable to EHR systems than PHR systems.\n\nRI functions are core and foundational to all other functions of the Model (PH, S). RI functions may be implemented within the architecture of a single system or across a tightly coupled suite of systems (applications). All functions within the Record Infrastructure Section have an identifier starting with “RI”."
+}
