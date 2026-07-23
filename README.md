@@ -7,3 +7,7 @@
 @> npm install
 @> node script/convert-excel-to-fsh.js
 ```
+
+## TODO
+* Integratie into main branch
+* Make main branch max2fhir script generate FSH 
