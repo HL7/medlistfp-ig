@@ -54,7 +54,7 @@
   "dependsOn": [
     {
       "id": "phrsfmr2",
-      "uri": "https://hl7.org/ehrs/uv/phrsfmr2/ImplementationGuide/hl7.ehrs.uv.phrsfmr2",
+      "uri": "http://hl7.org/ehrs/uv/phrsfmr2/ImplementationGuide/hl7.ehrs.uv.phrsfmr2",
       "packageId": "hl7.ehrs.uv.phrsfmr2",
       "version": "2.0.1"
     }
