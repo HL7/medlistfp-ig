@@ -1,7 +1,7 @@
 {
     "package-id": "hl7.ehrs.us.medlistfp",
     "version": "1.0.0-ballot",
-    "path": "http://hl7.org/ehrs/uv/medlistfp/2026Sep",
+    "path": "http://hl7.org/ehrs/us/medlistfp/2026Sep",
     "mode": "working",
     "status": "ballot",
     "sequence": "Informative",
@@ -11,5 +11,8 @@
     "introduction": "This is the Patient-Centric Med List and Med Reconciliation Functional Profile.",
     "desc": "This is the initial release",
     "descmd": "This is the initial release",
-    "first": "true"
+    "first": "true",
+    "registry-description": "This is the Patient-Centric Med List and Med Reconciliation Functional Profile.",
+    "registry-country": "us",
+    "registry-authority": "HL7"
 }

@@ -20,7 +20,7 @@
     }
   ],
   "url": "http://hl7.org/ehrs/us/medlistfp/ImplementationGuide/hl7.ehrs.us.medlistfp",
-  "version": "1.0.0",
+  "version": "1.0.0-ballot",
   "name": "MEDLISTFP",
   "title": "HL7 PHR-S FM R2.1 - Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1",
   "status": "active",

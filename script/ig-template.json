@@ -20,7 +20,7 @@
     }
   ],
   "url": "$CANONICAL$/ImplementationGuide/$PACKAGE_ID$",
-  "version": "1.0.0",
+  "version": "1.0.0-ballot",
   "name": "$FMID_PREFIX$",
   "title": "HL7 PHR-S FM R2.1 - Patient-Centric Med List and Med Reconciliation Functional Profile, Release 1",
   "status": "active",

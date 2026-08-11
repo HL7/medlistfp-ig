@@ -35,6 +35,7 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="authoring-process" name="Authoring Process and Artifact Generation"/>
 <page key="index" name="Home Page"/>
 <page key="hidden" name="Only here because IG QA requires"/>
 <page key="toc" name="Table of Contents"/>
