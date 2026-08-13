@@ -54,7 +54,7 @@ The University of Nebraska Medical Center – Center for Intelligent Healthcare 
 | **Advisor/Consultant** | Noah Bastola | University of Nebraska Medical Center | nobastola@unmc.edu |
 | **EHR WG Co-Chair** | Gary Dickinson | EHR Standards Consulting | gary.dickinson@ehr-standards.com |
 | **EHR WG Co-Chair** | David Schlossman, MD | University of Alabama - Birmingham | dschloss39@gmail.com |
-| **EHR WG Co-Chair, Publishing Facilitator** | Michael van der Zel BSc | UMCG | m.van.der.zel@umcg.nl |
+| **EHR WG Co-Chair, Publishing Facilitator** | Michael van der Zel BSc | University Medical Center Groningen, NL | m.van.der.zel@umcg.nl |
 
 ### What is a Functional Profile?
 
