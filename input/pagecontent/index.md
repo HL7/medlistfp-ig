@@ -50,12 +50,11 @@ The University of Nebraska Medical Center – Center for Intelligent Healthcare 
 
 | Role  | Name | Organization | Contact |
 | --- | --- | --- | --- |
-| **Project Facilitator** | Dr. Aarthi Shanmugavel | American Dental Association | shanmugavela@ada.org |
-| **Co-Chair** | Gary Dickinson | EHR Standards Consulting | gary.dickinson@ehr-standards.com |
-| **Co-Chair** | Mark Janczewski MD, MPH | Medical Networks, LLC | mark.janczewski@gmail.com |
-| **Co-Chair** | John Ritter FHL7, MSc |  | johnritter1@verizon.net |
-| **Co-Chair** | Lincoln Weed |  | ldweed424@gmail.com |
-| **Co-Chair, Publishing Facilitator** | Michael van der Zel BSc | UMCG | m.van.der.zel@umcg.nl |
+| **Project Facilitator** | James Tcheng, MD | Duke University & University of Nebraska Medical Center | James.tcheng@duke.edu |
+| **Advisor/Consultant** | Noah Bastola | University of Nebraska Medical Center | nobastola@unmc.edu |
+| **EHR WG Co-Chair** | Gary Dickinson | EHR Standards Consulting | gary.dickinson@ehr-standards.com |
+| **EHR WG Co-Chair** | David Schlossman, MD | University of Alabama - Birmingham | dschloss39@gmail.com |
+| **EHR WG Co-Chair, Publishing Facilitator** | Michael van der Zel BSc | UMCG | m.van.der.zel@umcg.nl |
 
 ### What is a Functional Profile?
 
